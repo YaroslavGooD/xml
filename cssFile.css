@@ -1,0 +1,94 @@
+movie_catalog {
+	background-repeat: no-repeat;
+	background-position: auto;
+	background-attachment: fixed;
+	background-size:cover;		
+	background-color: cyan; 
+	font-family: verdana; 
+}
+
+entire
+{
+	display: block;
+	color:blueviolet;
+	font-size: 82px;
+	font-family:Museo;
+	vertical-align: middle; 
+	text-align: center;
+	position:center;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom:10px;
+	margin-top:10px;
+	border: 10px double cadetblue;	
+}
+
+document_information
+{
+	color:#253a37;
+	font:consolas;
+}
+
+lab_title
+{
+	display:block;
+	font-weight:bold;
+	text-align: center;
+	background-color:#c29cae;
+	position:center;
+}
+
+proj_authors
+{
+	display:list-item;
+	text-align: center;
+	background-color:#a72db8;
+	font-size:18px;
+}
+
+author2:before{content:" ta "}
+proj_authors:before {content: "Autorzy laboratorium:"}
+
+movie
+{
+	background-repeat: no-repeat; 
+	background-position: center;
+	background-color: #6d2d4c;
+	display: inline-block;
+	background-size:100% 100%;
+    width: 335px;
+    height:auto;
+    min-height:380px;
+    max-height:390px;
+	color:white;
+	text-decoration:bold;
+	text-align: center;
+	border: 4px solid black;
+	position: relative;
+	top: 5%; left: 5%; 
+	right: 5%;
+	margin-right: 15px;
+	margin-bottom:15px;
+	word-wrap:break-word;
+	padding:0 0 6% 0;
+	overflow:auto;
+}
+
+title
+{
+	display: block;
+	color:#d7b26b;
+	font-size: 54px;
+	font-family:Museo;
+	text-align: center;
+	width: 80%;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	font-size: 200%;
+	font-weight: bold;
+	margin-top: 50%;
+}

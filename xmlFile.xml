@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "dtdFile.dtd">
+<?xml-stylesheet type="text/css" href="cssFile.css" ?>
+
+<movie_catalog>
+    <document_information>
+		<lab_title>
+		Movie viewer
+		</lab_title>
+		<proj_authors>
+			<author1>
+				<name>Yaroslav</name>
+				<surname>Horetskyi</surname>
+				<index_id>211714</index_id>
+			</author1>
+			<author2>
+				<name>Oleksandr</name>
+				<surname>Dubenko</surname>
+				<index_id>211651</index_id>
+			</author2>
+		</proj_authors>
+		<entire>
+		Movie catalog
+		</entire>
+	</document_information>
+
+    <movies>
+        <movie IdMovie="m1" IdCompany="en1">
+            <title lang="pl">Skazani na Shawshank</title>
+            <country>USA</country>
+            <date>10.09.1994</date>
+            <budget>25000000</budget>
+            <worldwide_gross>58500000</worldwide_gross>
+            <runtime>142 min</runtime>
+            <rate>9.3</rate>
+            <cm></cm>
+            <category>Drama</category>
+            <comp></comp>
+        </movie>
+
+        <!-- ^Castle^ -->
+        <movie IdMovie="m2" IdCompany="en2">
+            <title lang="pl">Rodzina od zaraz</title>
+            <country>USA</country>
+            <date>16.11.2018</date>
+            <budget>48000000</budget>
+            <worldwide_gross>81025217</worldwide_gross>
+            <runtime>118 min</runtime>
+            <rate>7.4</rate>
+            <category>Comedy, Drama</category>
+        </movie>
+        <movie IdMovie="m3" IdCompany="en2">
+            <title>Operacja Overlord</title>
+            <countries>
+                <country>USA</country>
+                <country>Canada</country>
+            </countries>
+            <date>22.09.2018</date>
+            <budget>38000000</budget>
+            <worldwide_gross>21704844</worldwide_gross>
+            <runtime>110 min</runtime>
+            <rate>6.8</rate>
+            <category>Action, Adventure, Horror</category>
+        </movie>
+        <movie IdMovie="m4" IdCompany="en2">
+            <title lang="pl">Ojciec chrzestny</title>
+            <country>USA</country>
+            <date>14.03.1972</date>
+            <budget>6000000</budget>
+            <worldwide_gross>245066411</worldwide_gross>
+            <runtime>175 min</runtime>
+            <rate>9.3</rate>
+            <category>Crime, Drama</category>
+        </movie>
+        <movie IdMovie="m5" IdCompany="en2">
+            <title lang="pl">Interstellar</title>
+            <countries>
+                <country>UK</country>
+                <country>USA</country>
+            </countries>
+            <date>26.10.2014</date>
+            <budget>165000000</budget>
+            <worldwide_gross>675020017</worldwide_gross>
+            <runtime>169 min</runtime>
+            <rate>8.6</rate>
+            <category>Adventure, Drama, Sci-Fi</category>
+        </movie>
+        <!-- ^Paramaunt^ -->
+        <movie IdMovie="m6" IdCompany="en3">
+            <title lang="pl">Narodziny gwiazdy</title>
+            <country>USA</country>
+            <date>31.08.2018</date>
+            <budget>36000000</budget>
+            <worldwide_gross>214601602</worldwide_gross>
+            <runtime>148 min</runtime>
+            <rate>7.8</rate>
+            <category>Drama, Music, Romance</category>
+        </movie>
+        <movie IdMovie="m7" IdCompany="en3">
+            <title lang="pl">Aquaman</title>
+            <countries>
+                <country>Australia</country>
+                <country>USA</country>
+            </countries>
+            <date>10.09.1994</date>
+            <budget>25000000</budget>
+            <worldwide_gross>58500000</worldwide_gross>
+            <runtime>142 min</runtime>
+            <rate>7.3</rate>
+            <category>Action, Adventure, Fantasy</category>
+        </movie>
+        <movie IdMovie="m8" IdCompany="en3">
+            <title lang="pl">Creed II</title> 
+            <country>USA</country>
+            <date>14.11.2018</date>
+            <budget>50000000</budget>
+            <worldwide_gross>175431419</worldwide_gross>
+            <runtime>130 min</runtime>
+            <rate>7.3</rate>
+            <category>Drama, Sport</category>
+        </movie>
+        <movie IdMovie="m9" IdCompany="en3">
+            <title lang="pl">Legion samobójców</title>
+            <country>USA</country>
+            <date>01.08.2016</date>
+            <budget>175000000</budget>
+            <worldwide_gross>746846894</worldwide_gross>
+            <runtime>134 min</runtime>
+            <rate>6.1</rate>
+            <category>Action, Adventure, Fantasy</category>
+        </movie>
+        <movie IdMovie="m10" IdCompany="en3">
+            <title lang="pl">Wonder Woman</title>
+            <countries>
+                <country>China</country>
+                <country>USA</country>
+                <country>Hong Kong</country>
+            </countries>
+            <date>15.05.2017</date>
+            <budget>149000000</budget>
+            <worldwide_gross>821763408</worldwide_gross>
+            <runtime>141 min</runtime>
+            <rate>7.5</rate>
+            <category>Action, Adventure, Fantasy</category>
+        </movie>
+        <movie IdMovie="m11" IdCompany="en3">
+            <title lang="en">Ocean's 8</title>
+            <country>USA</country>
+            <date>05.06.2018</date>
+            <budget>70000000</budget>
+            <worldwide_gross>283980167</worldwide_gross>
+            <runtime>110 min</runtime>
+            <rate>6.2</rate>
+            <category>Action, Comedy, Crime</category>
+        </movie>
+        <!-- ^Warner Bros^ -->
+        <movie IdMovie="m12" IdCompany="en4">
+            <title lang="pl">Drapacz chmur</title>
+            <country>USA</country>
+            <date>11.07.2018</date>
+            <budget>125000000</budget>
+            <worldwide_gross>292351275</worldwide_gross>
+            <runtime>102 min</runtime>
+            <rate>5.8</rate>
+            <category>Action, Adventure, Thriller</category>
+        </movie>
+        <movie IdMovie="m13" IdCompany="en4">
+            <title lang="pl">Kong: Wyspa Czaszki</title>
+            <countries>
+                <country>China</country>
+                <country>USA</country>
+            </countries>
+            <date>28.02.2017</date>
+            <budget>185000000</budget>
+            <worldwide_gross>566652812</worldwide_gross>
+            <runtime>118 min</runtime>
+            <rate>6.6</rate>
+            <category>Action, Adventure, Fantasy</category>
+        </movie>
+        <movie IdMovie="m14" IdCompany="en4">
+            <title lang="pl">Jurassic World: Upadłe królestwo </title>
+            <country>USA</country>
+            <date>21.05.2018</date>
+            <budget>170000000</budget>
+            <worldwide_gross>1309484461</worldwide_gross>
+            <runtime>128 min</runtime>
+            <rate>6.2</rate>
+            <category>Action, Adventure, Sci-Fi</category>
+        </movie>
+        <movie IdMovie="m15" IdCompany="en4">
+            <title lang="pl">Incepcja</title>
+            <countries>
+                <country>UK</country>
+                <country>USA</country>
+            </countries>
+            <date>08.07.2010</date>
+            <budget>160000000</budget>
+            <worldwide_gross>825532764</worldwide_gross>
+            <runtime>148 min</runtime>
+            <rate>8.8</rate>
+            <category>Action, Adventure, Sci-Fi</category>
+        </movie>
+        <movie IdMovie="m16" IdCompany="en4">
+            <title lang="pl">Watchmen. Strażnicy</title>
+            <country>USA</country>
+            <date>10.09.1994</date>
+            <budget>25000000</budget>
+            <worldwide_gross>58500000</worldwide_gross>
+            <runtime>142 min</runtime>
+            <rate>9.3</rate>
+            <category>Drama</category>
+        </movie>
+        <movie IdMovie="m17" IdCompany="en4">
+            <title lang="pl">Skazani na Shawshank</title>
+            <country>USA</country>
+            <date>23.02.2009</date>
+            <budget>130000000</budget>
+            <worldwide_gross>185258983</worldwide_gross>
+            <runtime>215 min</runtime>
+            <rate>7.6</rate>
+            <category>Action, Drama, Mystery</category>
+        </movie>
+        <!-- ^Legendary^ -->
+
+        <movie IdMovie="m18" IdCompany="en5">
+            <title lang="pl">Bohemian Rhapsody</title>
+            <countries>
+                <country>UK</country>
+                <country>USA</country>
+            </countries>
+            <date>23.10.2018</date>
+            <budget>52000000</budget>
+            <worldwide_gross>433000000</worldwide_gross>
+            <runtime>134 min</runtime>
+            <rate>8.1</rate>
+            <category>Biography, Drama, Music</category>
+        </movie>
+        <movie IdMovie="m19" IdCompany="en5">
+            <title lang="pl">Faworyta</title>
+            <countries>
+                <country>UK</country>
+                <country>USA</country>
+                <country>Ireland</country>
+            </countries>
+            <date>30.08.2018</date>
+            <budget>15000000</budget>
+            <worldwide_gross>42544448</worldwide_gross>
+            <runtime>119 min</runtime>
+            <rate>7.7</rate>
+            <category>Biography, Comedy, Drama</category>
+        </movie>
+        <movie IdMovie="m20" IdCompany="en5">
+            <title lang="pl">Free Solo: ekstremalna wspinaczka</title>
+            <country>USA</country>
+            <date>31.08.2018</date>
+            <budget>5000000</budget>
+            <worldwide_gross>17235945</worldwide_gross>
+            <runtime>100 min</runtime>
+            <rate>8.3</rate>
+            <category>Documentary, Sport</category>
+        </movie>
+        <!-- ^20th Century Fox^ -->
+
+        <movie IdMovie="m21" IdCompany="en6">
+            <title lang="pl">Green Book</title>
+            <country>USA</country>
+            <date>11.09.2018</date>
+            <budget>23000000</budget>
+            <worldwide_gross>42526091</worldwide_gross>
+            <runtime>130 min</runtime>
+            <rate>8.3</rate>
+            <category>Biography, Comedy, Drama</category>
+        </movie>
+        <movie IdMovie="m22" IdCompany="en6">
+            <title lang="pl">Jak wytresowac smoka 3</title>
+            <country>USA</country>
+            <date>03.01.2019</date>
+            <budget>129000000</budget>
+            <worldwide_gross>123301420</worldwide_gross>
+            <runtime>104 min</runtime>
+            <rate>7.9</rate>
+            <category>Animation, Action, Adventure</category>
+        </movie>
+        <movie IdMovie="m23" IdCompany="en6">
+            <title lang="pl">Zabójcze maszyny</title>
+            <country>USA</country>
+            <date>05.12.2018</date>
+            <budget>100000000</budget>
+            <worldwide_gross>82865379</worldwide_gross>
+            <runtime>128 min</runtime>
+            <rate>6.2</rate>
+            <category>Action, Adventure, Fantasy</category>
+        </movie>
+        <movie IdMovie="m24" IdCompany="en6">
+            <title lang="pl">Pierwszy czlowiek</title>
+            <countries>
+                <country>UK</country>
+                <country>Japan</country>
+            </countries>
+            <date>29.08.2018</date>
+            <budget>60000000</budget>
+            <worldwide_gross>100546153</worldwide_gross>
+            <runtime>141 min</runtime>
+            <rate>7.4</rate>
+            <category>Biography, Drama, History</category>
+        </movie>
+        <!-- ^Universal Pictures^ -->
+
+        <movie IdMovie="m25" IdCompany="en7">
+            <title lang="pl">Terminator 2: Dzien sadu</title>
+            <country>USA</country>
+            <date>01.07.1991</date>
+            <budget>102000000</budget>
+            <worldwide_gross>315000000</worldwide_gross>
+            <runtime>156 min</runtime>
+            <rate>8.5</rate>
+            <category>Action, Sci-Fi</category>
+        </movie>
+        <movie IdMovie="m26" IdCompany="en7">
+            <title lang="pl">American Psycho</title>
+            <countries>
+                <country>USA</country>
+                <country>Canada</country>
+            </countries>
+            <date>21.01.2000</date>
+            <budget>7000000</budget>
+            <worldwide_gross>34266564</worldwide_gross>
+            <runtime>101 min</runtime>
+            <rate>7.6</rate>
+            <category>Crime, Drama</category>
+        </movie>
+        <movie IdMovie="m27" IdCompany="en7">
+            <title lang="pl">Nieodwracalne</title>
+            <countries>
+                <country>France</country>
+            </countries>
+            <date>22.05.2002</date>
+            <budget>635610</budget>
+            <worldwide_gross>753501</worldwide_gross>
+            <runtime>99 min</runtime>
+            <rate>7.4</rate>
+            <category>Crime, Drama, Mystery</category>
+        </movie>
+        <movie IdMovie="m28" IdCompany="en7">
+            <title lang="pl">Gwiezdne wrota</title>
+            <countries>
+                <country>France</country>
+                <country>USA</country>
+            </countries>
+            <date>28.10.1994</date>
+            <budget>55000000</budget>
+            <worldwide_gross>196600000</worldwide_gross>
+            <runtime>130 min</runtime>
+            <rate>7.1</rate>
+            <category>Action, Adventure, Sci-Fi</category>
+        </movie>
+    </movies>
+
+    <companies>
+        <company IdCompany="en1">
+            <name>Castle Rock</name>
+            <founded>19.6.1987</founded>
+            <president>Martin Shafer</president>
+            <founders> 
+                <founder>Martin Shafer</founder>
+                <founder>Rob Reiner</founder>
+                <founder>Andrew Scheinman</founder>
+                <founder>Glenn Padnick</founder>
+                <founder>Alan Horn</founder>
+            </founders>
+            <headquarter>United States</headquarter>
+        </company>
+        <company IdCompany="en2">
+            <name>Paramount Pictures</name>
+            <founded>08.05.1912</founded>
+            <chairman>Jim Gianopulos</chairman>
+            <founders> 
+                <founder>William Wadsworth Hodkinson</founder>
+                <founder>Adolph Zukor</founder>
+                <founder>Jesse Louis Lasky</founder>
+            </founders>
+            <headquarter>United States</headquarter>
+        </company>
+        <company IdCompany="en3">
+            <name>Warner Bros.</name>
+            <founded>04.04.1923</founded>
+            <chairman>Kevin Tsujihara</chairman>
+            <founders> 
+                <founder>Harry Warner</founder>
+                <founder>Albert Warner</founder>
+                <founder>Sam Warner</founder>
+                <founder>Jack L. Warner</founder>
+            </founders>
+            <headquarter>United States</headquarter>
+        </company>
+        <company IdCompany="en4">
+            <name>Legendary</name>
+            <founded>2000</founded>
+            <chairman>Thomas Tull</chairman>
+            <founders> 
+                <founder>Thomas Tull</founder>
+            </founders>
+            <headquarter>United States</headquarter>
+        </company>
+        <company IdCompany="en5">
+            <name>20th Century Fox</name>
+            <founded>31.05.1935</founded>
+            <chairman>Stacey Snider</chairman>
+            <founders> 
+                <founder>William Fox</founder>
+                <founder>Joseph M. Schenck</founder>
+                <founder>Darryl F. Zanuck</founder>
+            </founders>
+            <headquarter>United States</headquarter>
+        </company>
+        <company IdCompany="en6">
+            <name>Universal Pictures</name>
+            <founded>30.04.1912</founded>
+            <president>Jimmy Horowitz</president>
+            <founders> 
+                <founder>Carl Laemmle</founder>
+                <founder>Pat Powers</founder>
+                <founder>David Horsley</founder>
+                <founder>William Swanson</founder>
+                <founder>Mark Dintenfass</founder>
+                <founder>Charles Baumann</founder>
+                <founder>Robert H. Cochrane</founder>
+                <founder>Adam Kessel</founder>
+                <founder>Jules Brulatour</founder>
+            </founders>
+            <headquarter>United States</headquarter>
+        </company>
+        <company IdCompany="en7">
+            <name>Lionsgate Films</name>
+            <founded>30.04.1912</founded>
+            <chairman>Rob Friedman</chairman>
+            <founders> 
+                <founder>Carl Laemmle</founder>
+                <founder>Pat Powers</founder>
+                <founder>David Horsley</founder>
+                <founder>William Swanson</founder>
+                <founder>Mark Dintenfass</founder>
+                <founder>Charles Baumann</founder>
+                <founder>Robert H. Cochrane</founder>
+                <founder>Adam Kessel</founder>
+                <founder>Jules Brulatour</founder>
+            </founders>
+            <headquarter>United States</headquarter>
+        </company>
+    </companies>
+</movie_catalog>
+
