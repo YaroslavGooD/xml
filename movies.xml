@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE note SYSTEM "dtdFile.dtd">
-<?xml-stylesheet type="text/css" href="cssFile.css" ?>
+<?xml-stylesheet type="text/css" href="movies.css" ?>
 
 <movie_catalog>
     <document_information>
