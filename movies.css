@@ -96,6 +96,14 @@ movie worldwide_gross::before {
   content: "Gross:";
 }
 
+movie worldwide_gross::after {
+  content: "$";
+}
+
+movie budget::after {
+  content: "$";
+}
+
 movie runtime::before {
   content: "Runtime:";
 }

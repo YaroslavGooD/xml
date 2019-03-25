@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE note SYSTEM "dtdFile.dtd">
+<!DOCTYPE movie_catalog SYSTEM "dtdFile.dtd">
 <?xml-stylesheet type="text/css" href="movies.css" ?>
 
 <movie_catalog>
@@ -48,7 +48,7 @@
             <category>Comedy, Drama</category>
         </movie>
         <movie IdMovie="m3" IdCompany="en2">
-            <title>Operacja Overlord</title>
+            <title lang="pl">Operacja Overlord</title>
             <countries>
                 <country>USA</country>
                 <country>Canada</country>
@@ -356,7 +356,7 @@
 
     <companies>
         <company IdCompany="en1">
-            <name>Castle Rock</name>
+            <companyTitle>Castle Rock</companyTitle>
             <founded>19.6.1987</founded>
             <president>Martin Shafer</president>
             <founders> 
@@ -369,7 +369,7 @@
             <headquarter>United States</headquarter>
         </company>
         <company IdCompany="en2">
-            <name>Paramount Pictures</name>
+            <companyTitle>Paramount Pictures</companyTitle>
             <founded>08.05.1912</founded>
             <chairman>Jim Gianopulos</chairman>
             <founders> 
@@ -380,7 +380,7 @@
             <headquarter>United States</headquarter>
         </company>
         <company IdCompany="en3">
-            <name>Warner Bros.</name>
+            <companyTitle>Warner Bros.</companyTitle>
             <founded>04.04.1923</founded>
             <chairman>Kevin Tsujihara</chairman>
             <founders> 
@@ -392,7 +392,7 @@
             <headquarter>United States</headquarter>
         </company>
         <company IdCompany="en4">
-            <name>Legendary</name>
+            <companyTitle>Legendary</companyTitle>
             <founded>2000</founded>
             <chairman>Thomas Tull</chairman>
             <founders> 
@@ -401,7 +401,7 @@
             <headquarter>United States</headquarter>
         </company>
         <company IdCompany="en5">
-            <name>20th Century Fox</name>
+            <companyTitle>20th Century Fox</companyTitle>
             <founded>31.05.1935</founded>
             <chairman>Stacey Snider</chairman>
             <founders> 
@@ -412,7 +412,7 @@
             <headquarter>United States</headquarter>
         </company>
         <company IdCompany="en6">
-            <name>Universal Pictures</name>
+            <companyTitle>Universal Pictures</companyTitle>
             <founded>30.04.1912</founded>
             <president>Jimmy Horowitz</president>
             <founders> 
@@ -429,7 +429,7 @@
             <headquarter>United States</headquarter>
         </company>
         <company IdCompany="en7">
-            <name>Lionsgate Films</name>
+            <companyTitle>Lionsgate Films</companyTitle>
             <founded>30.04.1912</founded>
             <chairman>Rob Friedman</chairman>
             <founders> 

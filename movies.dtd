@@ -1,4 +1,4 @@
-<!ELEMENT movie_catalog(document_information, movies, companies)>
+<!ELEMENT movie_catalog (document_information, movies, companies)>
     <!ELEMENT document_information (lab_title, proj_authors,entire)>
     	<!ELEMENT lab_title (#PCDATA)>
 		<!ELEMENT proj_authors (author1,author2)>
@@ -9,7 +9,7 @@
 				<!ELEMENT index_id (#PCDATA)>
             <!ELEMENT entire (#PCDATA)>
         <!ELEMENT movies (movie+)>
-            <!ELEMENT movie (title,countries,date,budget,worldwide_gross,runtime,rate,category)>
+            <!ELEMENT movie (title,(countries | country),date,budget,worldwide_gross,runtime,rate,category)>
             <!ELEMENT title (#PCDATA)>
             <!ELEMENT countries (country+)>
                 <!ELEMENT country (#PCDATA)>
@@ -22,8 +22,8 @@
             <!ATTLIST movie IdMovie ID #REQUIRED IdCompany IDREF #IMPLIED>
             <!ATTLIST title lang (pl | en) #REQUIRED>
         <!ELEMENT companies (company+)>
-            <!ELEMENT company (name,founded,(president | chairman),founders,headquarter)>
-                <!ELEMENT name (#PCDATA)>
+            <!ELEMENT company (companyTitle,founded,(president | chairman),founders,headquarter)>
+                <!ELEMENT companyTitle (#PCDATA)>
                 <!ELEMENT founded (#PCDATA)>
                 <!ELEMENT president (#PCDATA)>
                 <!ELEMENT chairman (#PCDATA)>
