@@ -3,7 +3,7 @@ movie_catalog {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #333;
 }
-
+/* attr */
 document_information {
   font-size: 14px;
   padding: 10px;
@@ -51,7 +51,7 @@ company {
   border: 1px solid #eee;
 }
 
-company name,
+company companyTitle,
 movie title {
   font-size: 24px;
   font-weight: normal;

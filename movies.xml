@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE movie_catalog SYSTEM "dtdFile.dtd">
+<!DOCTYPE movie_catalog SYSTEM "movie.dtd">
 <?xml-stylesheet type="text/css" href="movies.css" ?>
 
-<movie_catalog>
+<movie_catalog xmlns="https://www.w3schools.com" 
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="https://www.w3schools.com/xml movie_catalog.xsd">
     <document_information>
 		<lab_title>
 		Movie viewer
@@ -29,9 +31,9 @@
             <title lang="pl">Skazani na Shawshank</title>
             <country>USA</country>
             <date>10.09.1994</date>
-            <budget>25000000</budget>
-            <worldwide_gross>58500000</worldwide_gross>
-            <runtime>142 min</runtime>
+            <budget currency="usd">25000000</budget>
+            <worldwide_gross currency="usd">58500000</worldwide_gross>
+            <runtime timeFormat="min">142</runtime>
             <rate>9.3</rate>
             <category>Drama</category>
         </movie>
@@ -41,9 +43,9 @@
             <title lang="pl">Rodzina od zaraz</title>
             <country>USA</country>
             <date>16.11.2018</date>
-            <budget>48000000</budget>
-            <worldwide_gross>81025217</worldwide_gross>
-            <runtime>118 min</runtime>
+            <budget currency="usd">48000000</budget>
+            <worldwide_gross currency="usd">81025217</worldwide_gross>
+            <runtime timeFormat="min">118</runtime>
             <rate>7.4</rate>
             <category>Comedy, Drama</category>
         </movie>
@@ -54,9 +56,9 @@
                 <country>Canada</country>
             </countries>
             <date>22.09.2018</date>
-            <budget>38000000</budget>
-            <worldwide_gross>21704844</worldwide_gross>
-            <runtime>110 min</runtime>
+            <budget currency="usd">38000000</budget>
+            <worldwide_gross currency="usd">21704844</worldwide_gross>
+            <runtime timeFormat="min">110</runtime>
             <rate>6.8</rate>
             <category>Action, Adventure, Horror</category>
         </movie>
@@ -64,9 +66,9 @@
             <title lang="pl">Ojciec chrzestny</title>
             <country>USA</country>
             <date>14.03.1972</date>
-            <budget>6000000</budget>
-            <worldwide_gross>245066411</worldwide_gross>
-            <runtime>175 min</runtime>
+            <budget currency="usd">6000000</budget>
+            <worldwide_gross currency="usd">245066411</worldwide_gross>
+            <runtime timeFormat="min">175</runtime>
             <rate>9.3</rate>
             <category>Crime, Drama</category>
         </movie>
@@ -77,9 +79,9 @@
                 <country>USA</country>
             </countries>
             <date>26.10.2014</date>
-            <budget>165000000</budget>
-            <worldwide_gross>675020017</worldwide_gross>
-            <runtime>169 min</runtime>
+            <budget currency="usd">165000000</budget>
+            <worldwide_gross currency="usd">675020017</worldwide_gross>
+            <runtime timeFormat="min">169</runtime>
             <rate>8.6</rate>
             <category>Adventure, Drama, Sci-Fi</category>
         </movie>
@@ -88,9 +90,9 @@
             <title lang="pl">Narodziny gwiazdy</title>
             <country>USA</country>
             <date>31.08.2018</date>
-            <budget>36000000</budget>
-            <worldwide_gross>214601602</worldwide_gross>
-            <runtime>148 min</runtime>
+            <budget currency="usd">36000000</budget>
+            <worldwide_gross currency="usd">214601602</worldwide_gross>
+            <runtime timeFormat="min">148</runtime>
             <rate>7.8</rate>
             <category>Drama, Music, Romance</category>
         </movie>
@@ -101,9 +103,9 @@
                 <country>USA</country>
             </countries>
             <date>10.09.1994</date>
-            <budget>25000000</budget>
-            <worldwide_gross>58500000</worldwide_gross>
-            <runtime>142 min</runtime>
+            <budget currency="usd">25000000</budget>
+            <worldwide_gross currency="usd">58500000</worldwide_gross>
+            <runtime timeFormat="min">142</runtime>
             <rate>7.3</rate>
             <category>Action, Adventure, Fantasy</category>
         </movie>
@@ -111,9 +113,9 @@
             <title lang="pl">Creed II</title> 
             <country>USA</country>
             <date>14.11.2018</date>
-            <budget>50000000</budget>
-            <worldwide_gross>175431419</worldwide_gross>
-            <runtime>130 min</runtime>
+            <budget currency="usd">50000000</budget>
+            <worldwide_gross currency="usd">175431419</worldwide_gross>
+            <runtime timeFormat="min">130</runtime>
             <rate>7.3</rate>
             <category>Drama, Sport</category>
         </movie>
@@ -121,9 +123,9 @@
             <title lang="pl">Legion samobójców</title>
             <country>USA</country>
             <date>01.08.2016</date>
-            <budget>175000000</budget>
-            <worldwide_gross>746846894</worldwide_gross>
-            <runtime>134 min</runtime>
+            <budget currency="usd">175000000</budget>
+            <worldwide_gross currency="usd">746846894</worldwide_gross>
+            <runtime timeFormat="min">134</runtime>
             <rate>6.1</rate>
             <category>Action, Adventure, Fantasy</category>
         </movie>
@@ -135,9 +137,9 @@
                 <country>Hong Kong</country>
             </countries>
             <date>15.05.2017</date>
-            <budget>149000000</budget>
-            <worldwide_gross>821763408</worldwide_gross>
-            <runtime>141 min</runtime>
+            <budget currency="usd">149000000</budget>
+            <worldwide_gross currency="usd">821763408</worldwide_gross>
+            <runtime timeFormat="min">141</runtime>
             <rate>7.5</rate>
             <category>Action, Adventure, Fantasy</category>
         </movie>
@@ -145,9 +147,9 @@
             <title lang="en">Ocean's 8</title>
             <country>USA</country>
             <date>05.06.2018</date>
-            <budget>70000000</budget>
-            <worldwide_gross>283980167</worldwide_gross>
-            <runtime>110 min</runtime>
+            <budget currency="usd">70000000</budget>
+            <worldwide_gross currency="usd">283980167</worldwide_gross>
+            <runtime timeFormat="min">110</runtime>
             <rate>6.2</rate>
             <category>Action, Comedy, Crime</category>
         </movie>
@@ -156,9 +158,9 @@
             <title lang="pl">Drapacz chmur</title>
             <country>USA</country>
             <date>11.07.2018</date>
-            <budget>125000000</budget>
-            <worldwide_gross>292351275</worldwide_gross>
-            <runtime>102 min</runtime>
+            <budget currency="usd">125000000</budget>
+            <worldwide_gross currency="usd">292351275</worldwide_gross>
+            <runtime timeFormat="min">102</runtime>
             <rate>5.8</rate>
             <category>Action, Adventure, Thriller</category>
         </movie>
@@ -169,9 +171,9 @@
                 <country>USA</country>
             </countries>
             <date>28.02.2017</date>
-            <budget>185000000</budget>
-            <worldwide_gross>566652812</worldwide_gross>
-            <runtime>118 min</runtime>
+            <budget currency="usd">185000000</budget>
+            <worldwide_gross currency="usd">566652812</worldwide_gross>
+            <runtime timeFormat="min">118</runtime>
             <rate>6.6</rate>
             <category>Action, Adventure, Fantasy</category>
         </movie>
@@ -179,9 +181,9 @@
             <title lang="pl">Jurassic World: Upadłe królestwo </title>
             <country>USA</country>
             <date>21.05.2018</date>
-            <budget>170000000</budget>
-            <worldwide_gross>1309484461</worldwide_gross>
-            <runtime>128 min</runtime>
+            <budget currency="usd">170000000</budget>
+            <worldwide_gross currency="usd">1309484461</worldwide_gross>
+            <runtime timeFormat="min">128</runtime>
             <rate>6.2</rate>
             <category>Action, Adventure, Sci-Fi</category>
         </movie>
@@ -192,9 +194,9 @@
                 <country>USA</country>
             </countries>
             <date>08.07.2010</date>
-            <budget>160000000</budget>
-            <worldwide_gross>825532764</worldwide_gross>
-            <runtime>148 min</runtime>
+            <budget currency="usd">160000000</budget>
+            <worldwide_gross currency="usd">825532764</worldwide_gross>
+            <runtime timeFormat="min">148</runtime>
             <rate>8.8</rate>
             <category>Action, Adventure, Sci-Fi</category>
         </movie>
@@ -202,9 +204,9 @@
             <title lang="pl">Watchmen. Strażnicy</title>
             <country>USA</country>
             <date>10.09.1994</date>
-            <budget>25000000</budget>
-            <worldwide_gross>58500000</worldwide_gross>
-            <runtime>142 min</runtime>
+            <budget currency="usd">25000000</budget>
+            <worldwide_gross currency="usd">58500000</worldwide_gross>
+            <runtime timeFormat="min">142</runtime>
             <rate>9.3</rate>
             <category>Drama</category>
         </movie>
@@ -212,9 +214,9 @@
             <title lang="pl">Skazani na Shawshank</title>
             <country>USA</country>
             <date>23.02.2009</date>
-            <budget>130000000</budget>
-            <worldwide_gross>185258983</worldwide_gross>
-            <runtime>215 min</runtime>
+            <budget currency="usd">130000000</budget>
+            <worldwide_gross currency="usd">185258983</worldwide_gross>
+            <runtime timeFormat="min">215</runtime>
             <rate>7.6</rate>
             <category>Action, Drama, Mystery</category>
         </movie>
@@ -227,9 +229,9 @@
                 <country>USA</country>
             </countries>
             <date>23.10.2018</date>
-            <budget>52000000</budget>
-            <worldwide_gross>433000000</worldwide_gross>
-            <runtime>134 min</runtime>
+            <budget currency="usd">52000000</budget>
+            <worldwide_gross currency="usd">433000000</worldwide_gross>
+            <runtime timeFormat="min">134</runtime>
             <rate>8.1</rate>
             <category>Biography, Drama, Music</category>
         </movie>
@@ -241,9 +243,9 @@
                 <country>Ireland</country>
             </countries>
             <date>30.08.2018</date>
-            <budget>15000000</budget>
-            <worldwide_gross>42544448</worldwide_gross>
-            <runtime>119 min</runtime>
+            <budget currency="usd">15000000</budget>
+            <worldwide_gross currency="usd">42544448</worldwide_gross>
+            <runtime timeFormat="min">119</runtime>
             <rate>7.7</rate>
             <category>Biography, Comedy, Drama</category>
         </movie>
@@ -251,9 +253,9 @@
             <title lang="pl">Free Solo: ekstremalna wspinaczka</title>
             <country>USA</country>
             <date>31.08.2018</date>
-            <budget>5000000</budget>
-            <worldwide_gross>17235945</worldwide_gross>
-            <runtime>100 min</runtime>
+            <budget currency="usd">5000000</budget>
+            <worldwide_gross currency="usd">17235945</worldwide_gross>
+            <runtime timeFormat="min">100</runtime>
             <rate>8.3</rate>
             <category>Documentary, Sport</category>
         </movie>
@@ -263,9 +265,9 @@
             <title lang="pl">Green Book</title>
             <country>USA</country>
             <date>11.09.2018</date>
-            <budget>23000000</budget>
-            <worldwide_gross>42526091</worldwide_gross>
-            <runtime>130 min</runtime>
+            <budget currency="usd">23000000</budget>
+            <worldwide_gross currency="usd">42526091</worldwide_gross>
+            <runtime timeFormat="min">130</runtime>
             <rate>8.3</rate>
             <category>Biography, Comedy, Drama</category>
         </movie>
@@ -273,9 +275,9 @@
             <title lang="pl">Jak wytresowac smoka 3</title>
             <country>USA</country>
             <date>03.01.2019</date>
-            <budget>129000000</budget>
-            <worldwide_gross>123301420</worldwide_gross>
-            <runtime>104 min</runtime>
+            <budget currency="usd">129000000</budget>
+            <worldwide_gross currency="usd">123301420</worldwide_gross>
+            <runtime timeFormat="min">104</runtime>
             <rate>7.9</rate>
             <category>Animation, Action, Adventure</category>
         </movie>
@@ -283,9 +285,9 @@
             <title lang="pl">Zabójcze maszyny</title>
             <country>USA</country>
             <date>05.12.2018</date>
-            <budget>100000000</budget>
-            <worldwide_gross>82865379</worldwide_gross>
-            <runtime>128 min</runtime>
+            <budget currency="usd">100000000</budget>
+            <worldwide_gross currency="usd">82865379</worldwide_gross>
+            <runtime timeFormat="min">128</runtime>
             <rate>6.2</rate>
             <category>Action, Adventure, Fantasy</category>
         </movie>
@@ -296,9 +298,9 @@
                 <country>Japan</country>
             </countries>
             <date>29.08.2018</date>
-            <budget>60000000</budget>
-            <worldwide_gross>100546153</worldwide_gross>
-            <runtime>141 min</runtime>
+            <budget currency="usd">60000000</budget>
+            <worldwide_gross currency="usd">100546153</worldwide_gross>
+            <runtime timeFormat="min">141</runtime>
             <rate>7.4</rate>
             <category>Biography, Drama, History</category>
         </movie>
@@ -308,9 +310,9 @@
             <title lang="pl">Terminator 2: Dzien sadu</title>
             <country>USA</country>
             <date>01.07.1991</date>
-            <budget>102000000</budget>
-            <worldwide_gross>315000000</worldwide_gross>
-            <runtime>156 min</runtime>
+            <budget currency="usd">102000000</budget>
+            <worldwide_gross currency="usd">315000000</worldwide_gross>
+            <runtime timeFormat="min">156</runtime>
             <rate>8.5</rate>
             <category>Action, Sci-Fi</category>
         </movie>
@@ -321,9 +323,9 @@
                 <country>Canada</country>
             </countries>
             <date>21.01.2000</date>
-            <budget>7000000</budget>
-            <worldwide_gross>34266564</worldwide_gross>
-            <runtime>101 min</runtime>
+            <budget currency="usd">7000000</budget>
+            <worldwide_gross currency="usd">34266564</worldwide_gross>
+            <runtime timeFormat="min">101</runtime>
             <rate>7.6</rate>
             <category>Crime, Drama</category>
         </movie>
@@ -333,9 +335,9 @@
                 <country>France</country>
             </countries>
             <date>22.05.2002</date>
-            <budget>635610</budget>
-            <worldwide_gross>753501</worldwide_gross>
-            <runtime>99 min</runtime>
+            <budget currency="usd">635610</budget>
+            <worldwide_gross currency="usd">753501</worldwide_gross>
+            <runtime timeFormat="min">99</runtime>
             <rate>7.4</rate>
             <category>Crime, Drama, Mystery</category>
         </movie>
@@ -346,9 +348,9 @@
                 <country>USA</country>
             </countries>
             <date>28.10.1994</date>
-            <budget>55000000</budget>
-            <worldwide_gross>196600000</worldwide_gross>
-            <runtime>130 min</runtime>
+            <budget currency="usd">55000000</budget>
+            <worldwide_gross currency="usd">196600000</worldwide_gross>
+            <runtime timeFormat="min">130</runtime>
             <rate>7.1</rate>
             <category>Action, Adventure, Sci-Fi</category>
         </movie>
@@ -357,7 +359,7 @@
     <companies>
         <company IdCompany="en1">
             <companyTitle>Castle Rock</companyTitle>
-            <founded>19.6.1987</founded>
+            <founded isExactDate="true">19.6.1987</founded>
             <president>Martin Shafer</president>
             <founders> 
                 <founder>Martin Shafer</founder>
@@ -370,7 +372,7 @@
         </company>
         <company IdCompany="en2">
             <companyTitle>Paramount Pictures</companyTitle>
-            <founded>08.05.1912</founded>
+            <founded isExactDate="true">08.05.1912</founded>
             <chairman>Jim Gianopulos</chairman>
             <founders> 
                 <founder>William Wadsworth Hodkinson</founder>
@@ -381,7 +383,7 @@
         </company>
         <company IdCompany="en3">
             <companyTitle>Warner Bros.</companyTitle>
-            <founded>04.04.1923</founded>
+            <founded isExactDate="true">04.04.1923</founded>
             <chairman>Kevin Tsujihara</chairman>
             <founders> 
                 <founder>Harry Warner</founder>
@@ -393,7 +395,7 @@
         </company>
         <company IdCompany="en4">
             <companyTitle>Legendary</companyTitle>
-            <founded>2000</founded>
+            <founded isExactDate="false">2000</founded>
             <chairman>Thomas Tull</chairman>
             <founders> 
                 <founder>Thomas Tull</founder>
@@ -402,7 +404,7 @@
         </company>
         <company IdCompany="en5">
             <companyTitle>20th Century Fox</companyTitle>
-            <founded>31.05.1935</founded>
+            <founded isExactDate="true">31.05.1935</founded>
             <chairman>Stacey Snider</chairman>
             <founders> 
                 <founder>William Fox</founder>
@@ -413,7 +415,7 @@
         </company>
         <company IdCompany="en6">
             <companyTitle>Universal Pictures</companyTitle>
-            <founded>30.04.1912</founded>
+            <founded isExactDate="true">30.04.1912</founded>
             <president>Jimmy Horowitz</president>
             <founders> 
                 <founder>Carl Laemmle</founder>
@@ -430,7 +432,7 @@
         </company>
         <company IdCompany="en7">
             <companyTitle>Lionsgate Films</companyTitle>
-            <founded>30.04.1912</founded>
+            <founded isExactDate="true">30.04.1912</founded>
             <chairman>Rob Friedman</chairman>
             <founders> 
                 <founder>Carl Laemmle</founder>

@@ -21,6 +21,9 @@
             <!ELEMENT category (#PCDATA)>
             <!ATTLIST movie IdMovie ID #REQUIRED IdCompany IDREF #IMPLIED>
             <!ATTLIST title lang (pl | en) #REQUIRED>
+            <!ATTLIST budget currency (usd | pl) #REQUIRED>
+            <!ATTLIST worldwide_gross currency (usd | pl) #REQUIRED>
+            <!ATTLIST runtime timeFormat (min | hour) #REQUIRED>
         <!ELEMENT companies (company+)>
             <!ELEMENT company (companyTitle,founded,(president | chairman),founders,headquarter)>
                 <!ELEMENT companyTitle (#PCDATA)>
@@ -31,6 +34,7 @@
                     <!ELEMENT founder (#PCDATA)>
                 <!ELEMENT headquarter (#PCDATA)>
                 <!ATTLIST company IdCompany ID #REQUIRED>
+                <!ATTLIST founded isExactDate (true | false) #REQUIRED>
 
 
             
