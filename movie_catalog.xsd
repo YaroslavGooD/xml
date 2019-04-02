@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-elementFormDefault="qualified"
 targetNamespace="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catalog.xsd"
-xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catalog.xsd">
+xmlns:lol="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catalog.xsd"
+elementFormDefault="unqualified">
   <xs:element name="movie_catalog">
     <xs:complexType>
       <xs:sequence>
@@ -20,7 +20,7 @@ xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catal
                           <xs:element name="surname" type="xs:string"></xs:element>
                           <xs:element name="index_id">
                             <xs:simpleType>
-                              <xs:restriction base="xs:int">
+                              <xs:restriction base="xs:integer">
                                 <xs:pattern value="[0-9]{6}"/>
                               </xs:restriction>
                             </xs:simpleType>
@@ -35,7 +35,7 @@ xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catal
                           <xs:element name="surname" type="xs:string"></xs:element>
                           <xs:element name="index_id">
                             <xs:simpleType>
-                              <xs:restriction base="xs:int">
+                              <xs:restriction base="xs:integer">
                                 <xs:pattern value="[0-9]{6}"/>
                               </xs:restriction>
                             </xs:simpleType>
@@ -56,7 +56,7 @@ xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catal
               <xs:element name="movie" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="title" type="xs:string">
+                    <xs:element name="title">
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:string">
@@ -65,11 +65,36 @@ xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catal
                         </xs:simpleContent>
                       </xs:complexType>
                     </xs:element>
-                    <xs:element name="country" type="xs:string"></xs:element>
-                    <xs:element name="date" type="our:typ_data"/>
-                    <xs:group ref="money"/>
-                    <xs:attribute name="currency" type="xs:string" use="required">
-                    <xs:element name="runtime" type="xs:int">
+                    <xs:choice>
+                      <xs:element name="country" type="xs:string"></xs:element>
+                      <xs:element name="countries">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="country" maxOccurs="unbounded" type="xs:string"></xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:choice>
+                    <xs:element name="date" type="lol:typ_data"/>
+                    <xs:element name="budget">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="currency" type="xs:string" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="worldwide_gross">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="currency" type="xs:string" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="runtime">
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:string">
@@ -96,7 +121,7 @@ xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catal
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="companyTitle" type="xs:string"></xs:element>
-                    <xs:element name="founded" type="xs:typ_data">
+                    <xs:element name="founded">
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:string">
@@ -106,11 +131,9 @@ xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catal
                       </xs:complexType>
                     </xs:element>
                     <xs:choice>
-                     <xs:element name="president" type="xs:string"></xs:element>
+                      <xs:element name="president" type="xs:string"></xs:element>
                       <xs:element name="chairman" type="xs:string"></xs:element>
                     </xs:choice>
-                    <xs:element name="president" type="xs:string"></xs:element>
-                    <xs:element name="chairman" type="xs:string"></xs:element>
                     <xs:element name="founders">
                       <xs:complexType>
                         <xs:sequence>
@@ -127,7 +150,7 @@ xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catal
                     <xs:selector xpath="./companies/company"/>
                     <xs:field xpath="@IdCompany"/>
                   </xs:key>
-                  <xs:keyref name="Idrefcompany" refer="our:IdCompany">
+                  <xs:keyref name="Idrefcompany" refer="lol:Id_Company">
                     <xs:selector xpath="./movies/movie"/>
                     <xs:field xpath="@company"/>
                   </xs:keyref>
@@ -142,16 +165,9 @@ xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catal
 
   <xs:simpleType name="typ_data">
 	  <xs:restriction base="xs:date">
-	    <xs:minInclusive value="1200.01.01"/>
-	    <xs:maxInclusive value="2020.12.31"/>
+	    <xs:minInclusive value="1200-01-01"/>
+	    <xs:maxInclusive value="2025-12-31"/>
 	  </xs:restriction>
   </xs:simpleType>
-
-  <xs:group name="money">
-    <xs:sequence>
-      <xs:element name="worldwide_gross" type="xs:int">
-      <xs:element name="budget" type="xs:int">
-    </xs:sequence>
-  </xs:group>
 
 </xs:schema>
