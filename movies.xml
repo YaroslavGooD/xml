@@ -2,9 +2,10 @@
 <!DOCTYPE movie_catalog SYSTEM "movie.dtd">
 <?xml-stylesheet type="text/css" href="movies.css" ?>
 
-<movie_catalog xmlns="https://www.w3schools.com" 
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xsi:schemaLocation="https://www.w3schools.com/xml movie_catalog.xsd">
+<our:movie_catalog xmlns:our="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catalog.xsd"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                    xsi:schemaLocation="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catalog.xsd movie_catalog.xsd">
+
     <document_information>
 		<lab_title>
 		Movie viewer
@@ -448,5 +449,5 @@
             <headquarter>United States</headquarter>
         </company>
     </companies>
-</movie_catalog>
+</our:movie_catalog>
 
