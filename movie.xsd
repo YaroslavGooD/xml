@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.horetskyidubenko.com/catalog" 
+xmlns:catalog="http://www.horetskyidubenko.com/catalog" 
+xmlns:autorzy="http://www.horetskyidubenko.com/catalog" 
+xmlns:mov="http://www.horetskyidubenko.com/catalog" 
+xmlns:com="http://www.horetskyidubenko.com/catalog" 
+elementFormDefault="qualified">
+
+  <!-- SimpleType -->
+  <xs:simpleType name="ShortString">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="2" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="language">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="pl" />
+      <xs:enumeration value="en" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="curr">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="usd" />
+      <xs:enumeration value="pln" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="timeF">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="min" />
+      <xs:enumeration value="hour" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="typ_date">
+    <xs:restriction base="xs:date">
+      <xs:minInclusive value="1200-01-01" />
+      <xs:maxInclusive value="2025-12-31" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Group -->
+  <xs:group name="Persone">
+    <xs:sequence>
+      <xs:element name="name" type="autorzy:ShortString" />
+      <xs:element name="surname" type="autorzy:ShortString" />
+    </xs:sequence>
+  </xs:group>
+
+  <xs:attributeGroup name="movieAttr">
+    <xs:attribute name="IdMovie" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[m]([0-9])*" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="IdCompany" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[c]([0-9])*" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <!-- ComplexType -->
+  <xs:complexType name="author">
+    <xs:sequence>
+      <xs:group ref="autorzy:Persone" />
+      <xs:element ref="autorzy:index_id" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="money">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="currency" type="mov:curr" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- Meta data -->
+  <xs:element name="author1" type="autorzy:author" />
+
+  <xs:element name="author2" type="autorzy:author" />
+
+  <xs:element name="index_id">
+    <xs:simpleType>
+      <xs:restriction base="xs:integer">
+        <xs:pattern value="[0-9]{6}" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="entire" type="autorzy:ShortString" />
+
+  <xs:element name="proj_authors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="autorzy:author1" />
+        <xs:element ref="autorzy:author2" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="lab_title" type="autorzy:ShortString" />
+
+  <xs:element name="document_information">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="autorzy:lab_title" />
+        <xs:element ref="autorzy:proj_authors" />
+        <xs:element ref="autorzy:entire" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Movies -->
+  <xs:element name="title">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="mov:ShortString">
+          <xs:attribute name="lang" type="mov:language" use="optional" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="country" type="mov:ShortString" />
+
+  <xs:element name="countries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="mov:country" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="date" type="mov:typ_date" />
+
+  <xs:element name="budget" type="mov:money" />
+
+  <xs:element name="worldwide_gross" type="mov:money" />
+
+  <xs:element name="runtime">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="timeFormat" type="mov:timeF" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rate" type="xs:float" />
+
+  <xs:element name="category" type="xs:string" />
+  
+  <xs:element name="movie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="mov:title" />
+        <xs:choice>
+          <xs:element ref="mov:countries" />
+          <xs:element ref="mov:country" />
+        </xs:choice>
+        <xs:element ref="mov:date" />
+        <xs:element ref="mov:budget" />
+        <xs:element ref="mov:worldwide_gross" />
+        <xs:element ref="mov:runtime" />
+        <xs:element ref="mov:rate" />
+        <xs:element ref="mov:category" />
+      </xs:sequence>
+      <xs:attributeGroup ref="mov:movieAttr" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="movies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="mov:movie" maxOccurs="unbounded" minOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="movieID">
+      <xs:selector xpath="movie" />
+      <xs:field xpath="@IdMovie" />
+    </xs:key>
+  </xs:element>
+
+  <!-- Companies -->
+  <xs:element name="companyTitle" type="com:ShortString" />
+  <xs:element name="founded">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="com:typ_date">
+          <xs:attribute name="isExactDate" type="xs:boolean" use="optional" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="chairman" type="com:ShortString" />
+
+  <xs:element name="president" type="com:ShortString" />
+  
+  <xs:element name="founder" type="com:ShortString" />
+
+  <xs:element name="founders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="com:founder" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="headquarter" type="com:ShortString" />
+
+  <xs:element name="company">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="com:companyTitle" />
+        <xs:element ref="com:founded" />
+        <xs:choice>
+          <xs:element ref="com:chairman" />
+          <xs:element ref="com:president" />
+        </xs:choice>
+        <xs:element ref="com:founders" />
+        <xs:element ref="com:headquarter" />
+      </xs:sequence>
+      <xs:attribute name="IdCompany" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[c]([0-9])*" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="companies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="com:company" maxOccurs="unbounded" minOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:key name="companyID">
+      <xs:selector xpath="company" />
+      <xs:field xpath="@IdCompany" />
+    </xs:key>
+  </xs:element>
+
+<!-- Root elements -->
+  <xs:element name="movie_catalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="autorzy:document_information" />
+        <xs:element ref="mov:movies" />
+        <xs:element ref="com:companies" />
+      </xs:sequence>
+    </xs:complexType>
+
+<!-- Key ref -->
+    <xs:keyref name="refCompany" refer="com:companyID">
+      <xs:selector xpath="movies/movie" />
+      <xs:field xpath="@IdCompany" />
+    </xs:keyref>
+  </xs:element>
+
+</xs:schema>

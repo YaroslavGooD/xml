@@ -1,453 +1,452 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE lol:movie_catalog SYSTEM "movie.dtd">
-<?xml-stylesheet type="text/css" href="movies.css" ?>
+<!-- <!DOCTYPE catalog:movie_catalog SYSTEM "movie.dtd"> -->
+<?xml-stylesheet?>
+<catalog:movie_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:catalog="http://www.horetskyidubenko.com/catalog" 
+xsi:schemaLocation="http://www.horetskyidubenko.com/catalog movie.xsd">
+  
+  <!-- Metadata -->
+  <autorzy:document_information xmlns:autorzy="http://www.horetskyidubenko.com/catalog">
+    <autorzy:lab_title>Movie viewer</autorzy:lab_title>
+    <autorzy:proj_authors>
+      <autorzy:author1>
+        <autorzy:name>Yaroslav</autorzy:name>
+        <autorzy:surname>Horetskyi</autorzy:surname>
+        <autorzy:index_id>211714</autorzy:index_id>
+      </autorzy:author1>
+      <autorzy:author2>
+        <autorzy:name>Oleksandr</autorzy:name>
+        <autorzy:surname>Dubenko</autorzy:surname>
+        <autorzy:index_id>211651</autorzy:index_id>
+      </autorzy:author2>
+    </autorzy:proj_authors>
+    <autorzy:entire>Movie catalog</autorzy:entire>
+  </autorzy:document_information>
 
-<lol:movie_catalog xmlns:lol="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catalog.xsd"
-                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-                    xsi:schemaLocation="https://raw.githubusercontent.com/YaroslavGooD/xml/master/movie_catalog.xsd movie_catalog.xsd">
+  <!-- Movies -->
+  <mov:movies xmlns:mov="http://www.horetskyidubenko.com/catalog">
+    <mov:movie IdMovie="m1" IdCompany="c1">
+      <mov:title lang="pl">Skazani na Shawshank</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>1994-09-10</mov:date>
+      <mov:budget currency="usd">25000000</mov:budget>
+      <mov:worldwide_gross currency="usd">58500000</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">142</mov:runtime>
+      <mov:rate>9.3</mov:rate>
+      <mov:category>Drama</mov:category>
+    </mov:movie>
+    <!-- ^Castle^ -->
 
-    <document_information>
-		<lab_title>
-		Movie viewer
-		</lab_title>
-		<proj_authors>
-			<author1>
-				<name>Yaroslav</name>
-				<surname>Horetskyi</surname>
-				<index_id>211714</index_id>
-			</author1>
-			<author2>
-				<name>Oleksandr</name>
-				<surname>Dubenko</surname>
-				<index_id>211651</index_id>
-			</author2>
-		</proj_authors>
-		<entire>
-		Movie catalog
-		</entire>
-	</document_information>
+    <mov:movie IdMovie="m2" IdCompany="c2">
+      <mov:title lang="pl">Rodzina od zaraz</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-11-16</mov:date>
+      <mov:budget currency="usd">48000000</mov:budget>
+      <mov:worldwide_gross currency="usd">81025217</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">118</mov:runtime>
+      <mov:rate>7.4</mov:rate>
+      <mov:category>Comedy, Drama</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m3" IdCompany="c2">
+      <mov:title lang="pl">Operacja Overlord</mov:title>
+      <mov:countries>
+        <mov:country>USA</mov:country>
+        <mov:country>Canada</mov:country>
+      </mov:countries>
+      <mov:date>2018-09-22</mov:date>
+      <mov:budget currency="usd">38000000</mov:budget>
+      <mov:worldwide_gross currency="usd">21704844</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">110</mov:runtime>
+      <mov:rate>6.8</mov:rate>
+      <mov:category>Action, Adventure, Horror</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m4" IdCompany="c2">
+      <mov:title lang="pl">Ojciec chrzestny</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>1972-03-14</mov:date>
+      <mov:budget currency="usd">6000000</mov:budget>
+      <mov:worldwide_gross currency="usd">245066411</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">175</mov:runtime>
+      <mov:rate>9.3</mov:rate>
+      <mov:category>Crime, Drama</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m5" IdCompany="c2">
+      <mov:title lang="pl">Interstellar</mov:title>
+      <mov:countries>
+        <mov:country>UK</mov:country>
+        <mov:country>USA</mov:country>
+      </mov:countries>
+      <mov:date>2014-10-26</mov:date>
+      <mov:budget currency="usd">165000000</mov:budget>
+      <mov:worldwide_gross currency="usd">675020017</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">169</mov:runtime>
+      <mov:rate>8.6</mov:rate>
+      <mov:category>Adventure, Drama, Sci-Fi</mov:category>
+    </mov:movie>
+    <!-- ^Paramaunt^ -->
 
-    <movies>
-        <movie IdMovie="m1" IdCompany="en1">
-            <title lang="pl">Skazani na Shawshank</title>
-            <country>USA</country>
-            <date>1994-09-10</date>
-            <budget currency="usd">25000000</budget>
-            <worldwide_gross currency="usd">58500000</worldwide_gross>
-            <runtime timeFormat="min">142</runtime>
-            <rate>9.3</rate>
-            <category>Drama</category>
-        </movie>
+    <mov:movie IdMovie="m6" IdCompany="c3">
+      <mov:title lang="pl">Narodziny gwiazdy</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-08-31</mov:date>
+      <mov:budget currency="usd">36000000</mov:budget>
+      <mov:worldwide_gross currency="usd">214601602</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">148</mov:runtime>
+      <mov:rate>7.8</mov:rate>
+      <mov:category>Drama, Music, Romance</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m7" IdCompany="c3">
+      <mov:title lang="pl">Aquaman</mov:title>
+      <mov:countries>
+        <mov:country>Australia</mov:country>
+        <mov:country>USA</mov:country>
+      </mov:countries>
+      <mov:date>1994-09-10</mov:date>
+      <mov:budget currency="usd">25000000</mov:budget>
+      <mov:worldwide_gross currency="usd">58500000</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">142</mov:runtime>
+      <mov:rate>7.3</mov:rate>
+      <mov:category>Action, Adventure, Fantasy</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m8" IdCompany="c3">
+      <mov:title lang="pl">Creed II</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-11-14</mov:date>
+      <mov:budget currency="usd">50000000</mov:budget>
+      <mov:worldwide_gross currency="usd">175431419</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">130</mov:runtime>
+      <mov:rate>7.3</mov:rate>
+      <mov:category>Drama, Sport</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m9" IdCompany="c3">
+      <mov:title lang="pl">Legion samobójców</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2016-08-01</mov:date>
+      <mov:budget currency="usd">175000000</mov:budget>
+      <mov:worldwide_gross currency="usd">746846894</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">134</mov:runtime>
+      <mov:rate>6.1</mov:rate>
+      <mov:category>Action, Adventure, Fantasy</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m10" IdCompany="c3">
+      <mov:title lang="pl">Wonder Woman</mov:title>
+      <mov:countries>
+        <mov:country>China</mov:country>
+        <mov:country>USA</mov:country>
+        <mov:country>Hong Kong</mov:country>
+      </mov:countries>
+      <mov:date>2017-05-15</mov:date>
+      <mov:budget currency="usd">149000000</mov:budget>
+      <mov:worldwide_gross currency="usd">821763408</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">141</mov:runtime>
+      <mov:rate>7.5</mov:rate>
+      <mov:category>Action, Adventure, Fantasy</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m11" IdCompany="c3">
+      <mov:title lang="en">Ocean's 8</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-06-05</mov:date>
+      <mov:budget currency="usd">70000000</mov:budget>
+      <mov:worldwide_gross currency="usd">283980167</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">110</mov:runtime>
+      <mov:rate>6.2</mov:rate>
+      <mov:category>Action, Comedy, Crime</mov:category>
+    </mov:movie>
+    <!-- ^Warner Bros^ -->
 
-        <!-- ^Castle^ -->
-        <movie IdMovie="m2" IdCompany="en2">
-            <title lang="pl">Rodzina od zaraz</title>
-            <country>USA</country>
-            <date>2018-11-16</date>
-            <budget currency="usd">48000000</budget>
-            <worldwide_gross currency="usd">81025217</worldwide_gross>
-            <runtime timeFormat="min">118</runtime>
-            <rate>7.4</rate>
-            <category>Comedy, Drama</category>
-        </movie>
-        <movie IdMovie="m3" IdCompany="en2">
-            <title lang="pl">Operacja Overlord</title>
-            <countries>
-                <country>USA</country>
-                <country>Canada</country>
-            </countries>
-            <date>2018-09-22</date>
-            <budget currency="usd">38000000</budget>
-            <worldwide_gross currency="usd">21704844</worldwide_gross>
-            <runtime timeFormat="min">110</runtime>
-            <rate>6.8</rate>
-            <category>Action, Adventure, Horror</category>
-        </movie>
-        <movie IdMovie="m4" IdCompany="en2">
-            <title lang="pl">Ojciec chrzestny</title>
-            <country>USA</country>
-            <date>1972-03-14</date>
-            <budget currency="usd">6000000</budget>
-            <worldwide_gross currency="usd">245066411</worldwide_gross>
-            <runtime timeFormat="min">175</runtime>
-            <rate>9.3</rate>
-            <category>Crime, Drama</category>
-        </movie>
-        <movie IdMovie="m5" IdCompany="en2">
-            <title lang="pl">Interstellar</title>
-            <countries>
-                <country>UK</country>
-                <country>USA</country>
-            </countries>
-            <date>2014-10-26</date>
-            <budget currency="usd">165000000</budget>
-            <worldwide_gross currency="usd">675020017</worldwide_gross>
-            <runtime timeFormat="min">169</runtime>
-            <rate>8.6</rate>
-            <category>Adventure, Drama, Sci-Fi</category>
-        </movie>
-        <!-- ^Paramaunt^ -->
-        <movie IdMovie="m6" IdCompany="en3">
-            <title lang="pl">Narodziny gwiazdy</title>
-            <country>USA</country>
-            <date>2018-08-31</date>
-            <budget currency="usd">36000000</budget>
-            <worldwide_gross currency="usd">214601602</worldwide_gross>
-            <runtime timeFormat="min">148</runtime>
-            <rate>7.8</rate>
-            <category>Drama, Music, Romance</category>
-        </movie>
-        <movie IdMovie="m7" IdCompany="en3">
-            <title lang="pl">Aquaman</title>
-            <countries>
-                <country>Australia</country>
-                <country>USA</country>
-            </countries>
-            <date>1994-09-10</date>
-            <budget currency="usd">25000000</budget>
-            <worldwide_gross currency="usd">58500000</worldwide_gross>
-            <runtime timeFormat="min">142</runtime>
-            <rate>7.3</rate>
-            <category>Action, Adventure, Fantasy</category>
-        </movie>
-        <movie IdMovie="m8" IdCompany="en3">
-            <title lang="pl">Creed II</title> 
-            <country>USA</country>
-            <date>2018-11-14</date>
-            <budget currency="usd">50000000</budget>
-            <worldwide_gross currency="usd">175431419</worldwide_gross>
-            <runtime timeFormat="min">130</runtime>
-            <rate>7.3</rate>
-            <category>Drama, Sport</category>
-        </movie>
-        <movie IdMovie="m9" IdCompany="en3">
-            <title lang="pl">Legion samobójców</title>
-            <country>USA</country>
-            <date>2016-08-01</date>
-            <budget currency="usd">175000000</budget>
-            <worldwide_gross currency="usd">746846894</worldwide_gross>
-            <runtime timeFormat="min">134</runtime>
-            <rate>6.1</rate>
-            <category>Action, Adventure, Fantasy</category>
-        </movie>
-        <movie IdMovie="m10" IdCompany="en3">
-            <title lang="pl">Wonder Woman</title>
-            <countries>
-                <country>China</country>
-                <country>USA</country>
-                <country>Hong Kong</country>
-            </countries>
-            <date>2017-05-15</date>
-            <budget currency="usd">149000000</budget>
-            <worldwide_gross currency="usd">821763408</worldwide_gross>
-            <runtime timeFormat="min">141</runtime>
-            <rate>7.5</rate>
-            <category>Action, Adventure, Fantasy</category>
-        </movie>
-        <movie IdMovie="m11" IdCompany="en3">
-            <title lang="en">Ocean's 8</title>
-            <country>USA</country>
-            <date>2018-06-05</date>
-            <budget currency="usd">70000000</budget>
-            <worldwide_gross currency="usd">283980167</worldwide_gross>
-            <runtime timeFormat="min">110</runtime>
-            <rate>6.2</rate>
-            <category>Action, Comedy, Crime</category>
-        </movie>
-        <!-- ^Warner Bros^ -->
-        <movie IdMovie="m12" IdCompany="en4">
-            <title lang="pl">Drapacz chmur</title>
-            <country>USA</country>
-            <date>2018-07-11</date>
-            <budget currency="usd">125000000</budget>
-            <worldwide_gross currency="usd">292351275</worldwide_gross>
-            <runtime timeFormat="min">102</runtime>
-            <rate>5.8</rate>
-            <category>Action, Adventure, Thriller</category>
-        </movie>
-        <movie IdMovie="m13" IdCompany="en4">
-            <title lang="pl">Kong: Wyspa Czaszki</title>
-            <countries>
-                <country>China</country>
-                <country>USA</country>
-            </countries>
-            <date>2017-02-28</date>
-            <budget currency="usd">185000000</budget>
-            <worldwide_gross currency="usd">566652812</worldwide_gross>
-            <runtime timeFormat="min">118</runtime>
-            <rate>6.6</rate>
-            <category>Action, Adventure, Fantasy</category>
-        </movie>
-        <movie IdMovie="m14" IdCompany="en4">
-            <title lang="pl">Jurassic World: Upadłe królestwo </title>
-            <country>USA</country>
-            <date>2018-05-21</date>
-            <budget currency="usd">170000000</budget>
-            <worldwide_gross currency="usd">1309484461</worldwide_gross>
-            <runtime timeFormat="min">128</runtime>
-            <rate>6.2</rate>
-            <category>Action, Adventure, Sci-Fi</category>
-        </movie>
-        <movie IdMovie="m15" IdCompany="en4">
-            <title lang="pl">Incepcja</title>
-            <countries>
-                <country>UK</country>
-                <country>USA</country>
-            </countries>
-            <date>2010-07-08</date>
-            <budget currency="usd">160000000</budget>
-            <worldwide_gross currency="usd">825532764</worldwide_gross>
-            <runtime timeFormat="min">148</runtime>
-            <rate>8.8</rate>
-            <category>Action, Adventure, Sci-Fi</category>
-        </movie>
-        <movie IdMovie="m16" IdCompany="en4">
-            <title lang="pl">Watchmen- Strażnicy</title>
-            <country>USA</country>
-            <date>1994-09-10</date>
-            <budget currency="usd">25000000</budget>
-            <worldwide_gross currency="usd">58500000</worldwide_gross>
-            <runtime timeFormat="min">142</runtime>
-            <rate>9.3</rate>
-            <category>Drama</category>
-        </movie>
-        <movie IdMovie="m17" IdCompany="en4">
-            <title lang="pl">Skazani na Shawshank</title>
-            <country>USA</country>
-            <date>2009-02-23</date>
-            <budget currency="usd">130000000</budget>
-            <worldwide_gross currency="usd">185258983</worldwide_gross>
-            <runtime timeFormat="min">215</runtime>
-            <rate>7.6</rate>
-            <category>Action, Drama, Mystery</category>
-        </movie>
-        <!-- ^Legendary^ -->
+    <mov:movie IdMovie="m12" IdCompany="c4">
+      <mov:title lang="pl">Drapacz chmur</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-07-11</mov:date>
+      <mov:budget currency="usd">125000000</mov:budget>
+      <mov:worldwide_gross currency="usd">292351275</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">102</mov:runtime>
+      <mov:rate>5.8</mov:rate>
+      <mov:category>Action, Adventure, Thriller</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m13" IdCompany="c4">
+      <mov:title lang="pl">Kong: Wyspa Czaszki</mov:title>
+      <mov:countries>
+        <mov:country>China</mov:country>
+        <mov:country>USA</mov:country>
+      </mov:countries>
+      <mov:date>2017-02-28</mov:date>
+      <mov:budget currency="usd">185000000</mov:budget>
+      <mov:worldwide_gross currency="usd">566652812</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">118</mov:runtime>
+      <mov:rate>6.6</mov:rate>
+      <mov:category>Action, Adventure, Fantasy</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m14" IdCompany="c4">
+      <mov:title lang="pl">Jurassic World: Upadłe królestwo </mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-05-21</mov:date>
+      <mov:budget currency="usd">170000000</mov:budget>
+      <mov:worldwide_gross currency="usd">1309484461</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">128</mov:runtime>
+      <mov:rate>6.2</mov:rate>
+      <mov:category>Action, Adventure, Sci-Fi</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m15" IdCompany="c4">
+      <mov:title lang="pl">Incepcja</mov:title>
+      <mov:countries>
+        <mov:country>UK</mov:country>
+        <mov:country>USA</mov:country>
+      </mov:countries>
+      <mov:date>2010-07-08</mov:date>
+      <mov:budget currency="usd">160000000</mov:budget>
+      <mov:worldwide_gross currency="usd">825532764</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">148</mov:runtime>
+      <mov:rate>8.8</mov:rate>
+      <mov:category>Action, Adventure, Sci-Fi</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m16" IdCompany="c4">
+      <mov:title lang="pl">Watchmen- Strażnicy</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>1994-09-10</mov:date>
+      <mov:budget currency="usd">25000000</mov:budget>
+      <mov:worldwide_gross currency="usd">58500000</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">142</mov:runtime>
+      <mov:rate>9.3</mov:rate>
+      <mov:category>Drama</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m17" IdCompany="c4">
+      <mov:title lang="pl">Skazani na Shawshank</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2009-02-23</mov:date>
+      <mov:budget currency="usd">130000000</mov:budget>
+      <mov:worldwide_gross currency="usd">185258983</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">215</mov:runtime>
+      <mov:rate>7.6</mov:rate>
+      <mov:category>Action, Drama, Mystery</mov:category>
+    </mov:movie>
+    <!-- ^Legendary^ -->
 
-        <movie IdMovie="m18" IdCompany="en5">
-            <title lang="pl">Bohemian Rhapsody</title>
-            <countries>
-                <country>UK</country>
-                <country>USA</country>
-            </countries>
-            <date>2018-10-23</date>
-            <budget currency="usd">52000000</budget>
-            <worldwide_gross currency="usd">433000000</worldwide_gross>
-            <runtime timeFormat="min">134</runtime>
-            <rate>8.1</rate>
-            <category>Biography, Drama, Music</category>
-        </movie>
-        <movie IdMovie="m19" IdCompany="en5">
-            <title lang="pl">Faworyta</title>
-            <countries>
-                <country>UK</country>
-                <country>USA</country>
-                <country>Ireland</country>
-            </countries>
-            <date>2018-08-30</date>
-            <budget currency="usd">15000000</budget>
-            <worldwide_gross currency="usd">42544448</worldwide_gross>
-            <runtime timeFormat="min">119</runtime>
-            <rate>7.7</rate>
-            <category>Biography, Comedy, Drama</category>
-        </movie>
-        <movie IdMovie="m20" IdCompany="en5">
-            <title lang="pl">Free Solo: ekstremalna wspinaczka</title>
-            <country>USA</country>
-            <date>2018-08-31</date>
-            <budget currency="usd">5000000</budget>
-            <worldwide_gross currency="usd">17235945</worldwide_gross>
-            <runtime timeFormat="min">100</runtime>
-            <rate>8.3</rate>
-            <category>Documentary, Sport</category>
-        </movie>
-        <!-- ^20th Century Fox^ -->
+    <mov:movie IdMovie="m18" IdCompany="c5">
+      <mov:title lang="pl">Bohemian Rhapsody</mov:title>
+      <mov:countries>
+        <mov:country>UK</mov:country>
+        <mov:country>USA</mov:country>
+      </mov:countries>
+      <mov:date>2018-10-23</mov:date>
+      <mov:budget currency="usd">52000000</mov:budget>
+      <mov:worldwide_gross currency="usd">433000000</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">134</mov:runtime>
+      <mov:rate>8.1</mov:rate>
+      <mov:category>Biography, Drama, Music</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m19" IdCompany="c5">
+      <mov:title lang="pl">Faworyta</mov:title>
+      <mov:countries>
+        <mov:country>UK</mov:country>
+        <mov:country>USA</mov:country>
+        <mov:country>Ireland</mov:country>
+      </mov:countries>
+      <mov:date>2018-08-30</mov:date>
+      <mov:budget currency="usd">15000000</mov:budget>
+      <mov:worldwide_gross currency="usd">42544448</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">119</mov:runtime>
+      <mov:rate>7.7</mov:rate>
+      <mov:category>Biography, Comedy, Drama</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m20" IdCompany="c5">
+      <mov:title lang="pl">Free Solo: ekstremalna wspinaczka</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-08-31</mov:date>
+      <mov:budget currency="usd">5000000</mov:budget>
+      <mov:worldwide_gross currency="usd">17235945</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">100</mov:runtime>
+      <mov:rate>8.3</mov:rate>
+      <mov:category>Documentary, Sport</mov:category>
+    </mov:movie>
+    <!-- ^20th Century Fox^ -->
 
-        <movie IdMovie="m21" IdCompany="en6">
-            <title lang="pl">Green Book</title>
-            <country>USA</country>
-            <date>2018-09-11</date>
-            <budget currency="usd">23000000</budget>
-            <worldwide_gross currency="usd">42526091</worldwide_gross>
-            <runtime timeFormat="min">130</runtime>
-            <rate>8.3</rate>
-            <category>Biography, Comedy, Drama</category>
-        </movie>
-        <movie IdMovie="m22" IdCompany="en6">
-            <title lang="pl">Jak wytresowac smoka 3</title>
-            <country>USA</country>
-            <date>2019-01-03</date>
-            <budget currency="usd">129000000</budget>
-            <worldwide_gross currency="usd">123301420</worldwide_gross>
-            <runtime timeFormat="min">104</runtime>
-            <rate>7.9</rate>
-            <category>Animation, Action, Adventure</category>
-        </movie>
-        <movie IdMovie="m23" IdCompany="en6">
-            <title lang="pl">Zabójcze maszyny</title>
-            <country>USA</country>
-            <date>2018-12-05</date>
-            <budget currency="usd">100000000</budget>
-            <worldwide_gross currency="usd">82865379</worldwide_gross>
-            <runtime timeFormat="min">128</runtime>
-            <rate>6.2</rate>
-            <category>Action, Adventure, Fantasy</category>
-        </movie>
-        <movie IdMovie="m24" IdCompany="en6">
-            <title lang="pl">Pierwszy czlowiek</title>
-            <countries>
-                <country>UK</country>
-                <country>Japan</country>
-            </countries>
-            <date>2018-08-29</date>
-            <budget currency="usd">60000000</budget>
-            <worldwide_gross currency="usd">100546153</worldwide_gross>
-            <runtime timeFormat="min">141</runtime>
-            <rate>7.4</rate>
-            <category>Biography, Drama, History</category>
-        </movie>
-        <!-- ^Universal Pictures^ -->
+    <mov:movie IdMovie="m21" IdCompany="c6">
+      <mov:title lang="pl">Green Book</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-09-11</mov:date>
+      <mov:budget currency="usd">23000000</mov:budget>
+      <mov:worldwide_gross currency="usd">42526091</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">130</mov:runtime>
+      <mov:rate>8.3</mov:rate>
+      <mov:category>Biography, Comedy, Drama</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m22" IdCompany="c6">
+      <mov:title lang="pl">Jak wytresowac smoka 3</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2019-01-03</mov:date>
+      <mov:budget currency="usd">129000000</mov:budget>
+      <mov:worldwide_gross currency="usd">123301420</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">104</mov:runtime>
+      <mov:rate>7.9</mov:rate>
+      <mov:category>Animation, Action, Adventure</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m23" IdCompany="c6">
+      <mov:title lang="pl">Zabójcze maszyny</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>2018-12-05</mov:date>
+      <mov:budget currency="usd">100000000</mov:budget>
+      <mov:worldwide_gross currency="usd">82865379</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">128</mov:runtime>
+      <mov:rate>6.2</mov:rate>
+      <mov:category>Action, Adventure, Fantasy</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m24" IdCompany="c6">
+      <mov:title lang="pl">Pierwszy czlowiek</mov:title>
+      <mov:countries>
+        <mov:country>UK</mov:country>
+        <mov:country>Japan</mov:country>
+      </mov:countries>
+      <mov:date>2018-08-29</mov:date>
+      <mov:budget currency="usd">60000000</mov:budget>
+      <mov:worldwide_gross currency="usd">100546153</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">141</mov:runtime>
+      <mov:rate>7.4</mov:rate>
+      <mov:category>Biography, Drama, History</mov:category>
+    </mov:movie>
+    <!-- ^Universal Pictures^ -->
 
-        <movie IdMovie="m25" IdCompany="en7">
-            <title lang="pl">Terminator 2: Dzien sadu</title>
-            <country>USA</country>
-            <date>1991-07-18</date>
-            <budget currency="usd">102000000</budget>
-            <worldwide_gross currency="usd">315000000</worldwide_gross>
-            <runtime timeFormat="min">156</runtime>
-            <rate>8.5</rate>
-            <category>Action, Sci-Fi</category>
-        </movie>
-        <movie IdMovie="m26" IdCompany="en7">
-            <title lang="pl">American Psycho</title>
-            <countries>
-                <country>USA</country>
-                <country>Canada</country>
-            </countries>
-            <date>2000-01-21</date>
-            <budget currency="usd">7000000</budget>
-            <worldwide_gross currency="usd">34266564</worldwide_gross>
-            <runtime timeFormat="min">101</runtime>
-            <rate>7.6</rate>
-            <category>Crime, Drama</category>
-        </movie>
-        <movie IdMovie="m27" IdCompany="en7">
-            <title lang="pl">Nieodwracalne</title>
-            <countries>
-                <country>France</country>
-            </countries>
-            <date>2002-05-22</date>
-            <budget currency="usd">635610</budget>
-            <worldwide_gross currency="usd">753501</worldwide_gross>
-            <runtime timeFormat="min">99</runtime>
-            <rate>7.4</rate>
-            <category>Crime, Drama, Mystery</category>
-        </movie>
-        <movie IdMovie="m28" IdCompany="en7">
-            <title lang="pl">Gwiezdne wrota</title>
-            <countries>
-                <country>France</country>
-                <country>USA</country>
-            </countries>
-            <date>1994-10-28</date>
-            <budget currency="usd">55000000</budget>
-            <worldwide_gross currency="usd">196600000</worldwide_gross>
-            <runtime timeFormat="min">130</runtime>
-            <rate>7.1</rate>
-            <category>Action, Adventure, Sci-Fi</category>
-        </movie>
-    </movies>
+    <mov:movie IdMovie="m25" IdCompany="c7">
+      <mov:title lang="pl">Terminator 2: Dzien sadu</mov:title>
+      <mov:country>USA</mov:country>
+      <mov:date>1991-07-18</mov:date>
+      <mov:budget currency="usd">102000000</mov:budget>
+      <mov:worldwide_gross currency="usd">315000000</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">156</mov:runtime>
+      <mov:rate>8.5</mov:rate>
+      <mov:category>Action, Sci-Fi</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m26" IdCompany="c7">
+      <mov:title lang="pl">American Psycho</mov:title>
+      <mov:countries>
+        <mov:country>USA</mov:country>
+        <mov:country>Canada</mov:country>
+      </mov:countries>
+      <mov:date>2000-01-21</mov:date>
+      <mov:budget currency="usd">7000000</mov:budget>
+      <mov:worldwide_gross currency="usd">34266564</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">101</mov:runtime>
+      <mov:rate>7.6</mov:rate>
+      <mov:category>Crime, Drama</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m27" IdCompany="c7">
+      <mov:title lang="pl">Nieodwracalne</mov:title>
+      <mov:countries>
+        <mov:country>France</mov:country>
+      </mov:countries>
+      <mov:date>2002-05-22</mov:date>
+      <mov:budget currency="usd">635610</mov:budget>
+      <mov:worldwide_gross currency="usd">753501</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">99</mov:runtime>
+      <mov:rate>7.4</mov:rate>
+      <mov:category>Crime, Drama, Mystery</mov:category>
+    </mov:movie>
+    <mov:movie IdMovie="m28" IdCompany="c7">
+      <mov:title lang="pl">Gwiezdne wrota</mov:title>
+      <mov:countries>
+        <mov:country>France</mov:country>
+        <mov:country>USA</mov:country>
+      </mov:countries>
+      <mov:date>1994-10-28</mov:date>
+      <mov:budget currency="usd">55000000</mov:budget>
+      <mov:worldwide_gross currency="usd">196600000</mov:worldwide_gross>
+      <mov:runtime timeFormat="min">130</mov:runtime>
+      <mov:rate>7.1</mov:rate>
+      <mov:category>Action, Adventure, Sci-Fi</mov:category>
+    </mov:movie>
+  </mov:movies>
 
-    <companies>
-        <company IdCompany="en1">
-            <companyTitle>Castle Rock</companyTitle>
-            <founded isExactDate="true">19-6-1987</founded>
-            <president>Martin Shafer</president>
-            <founders> 
-                <founder>Martin Shafer</founder>
-                <founder>Rob Reiner</founder>
-                <founder>Andrew Scheinman</founder>
-                <founder>Glenn Padnick</founder>
-                <founder>Alan Horn</founder>
-            </founders>
-            <headquarter>United States</headquarter>
-        </company>
-        <company IdCompany="en2">
-            <companyTitle>Paramount Pictures</companyTitle>
-            <founded isExactDate="true">08-05-1912</founded>
-            <chairman>Jim Gianopulos</chairman>
-            <founders> 
-                <founder>William Wadsworth Hodkinson</founder>
-                <founder>Adolph Zukor</founder>
-                <founder>Jesse Louis Lasky</founder>
-            </founders>
-            <headquarter>United States</headquarter>
-        </company>
-        <company IdCompany="en3">
-            <companyTitle>Warner Bros-</companyTitle>
-            <founded isExactDate="true">04-04-1923</founded>
-            <chairman>Kevin Tsujihara</chairman>
-            <founders> 
-                <founder>Harry Warner</founder>
-                <founder>Albert Warner</founder>
-                <founder>Sam Warner</founder>
-                <founder>Jack L- Warner</founder>
-            </founders>
-            <headquarter>United States</headquarter>
-        </company>
-        <company IdCompany="en4">
-            <companyTitle>Legendary</companyTitle>
-            <founded isExactDate="false">2000</founded>
-            <chairman>Thomas Tull</chairman>
-            <founders> 
-                <founder>Thomas Tull</founder>
-            </founders>
-            <headquarter>United States</headquarter>
-        </company>
-        <company IdCompany="en5">
-            <companyTitle>20th Century Fox</companyTitle>
-            <founded isExactDate="true">31-05-1935</founded>
-            <chairman>Stacey Snider</chairman>
-            <founders> 
-                <founder>William Fox</founder>
-                <founder>Joseph M- Schenck</founder>
-                <founder>Darryl F- Zanuck</founder>
-            </founders>
-            <headquarter>United States</headquarter>
-        </company>
-        <company IdCompany="en6">
-            <companyTitle>Universal Pictures</companyTitle>
-            <founded isExactDate="true">30-04-1912</founded>
-            <president>Jimmy Horowitz</president>
-            <founders> 
-                <founder>Carl Laemmle</founder>
-                <founder>Pat Powers</founder>
-                <founder>David Horsley</founder>
-                <founder>William Swanson</founder>
-                <founder>Mark Dintenfass</founder>
-                <founder>Charles Baumann</founder>
-                <founder>Robert H- Cochrane</founder>
-                <founder>Adam Kessel</founder>
-                <founder>Jules Brulatour</founder>
-            </founders>
-            <headquarter>United States</headquarter>
-        </company>
-        <company IdCompany="en7">
-            <companyTitle>Lionsgate Films</companyTitle>
-            <founded isExactDate="true">30-04-1912</founded>
-            <chairman>Rob Friedman</chairman>
-            <founders> 
-                <founder>Carl Laemmle</founder>
-                <founder>Pat Powers</founder>
-                <founder>David Horsley</founder>
-                <founder>William Swanson</founder>
-                <founder>Mark Dintenfass</founder>
-                <founder>Charles Baumann</founder>
-                <founder>Robert H- Cochrane</founder>
-                <founder>Adam Kessel</founder>
-                <founder>Jules Brulatour</founder>
-            </founders>
-            <headquarter>United States</headquarter>
-        </company>
-    </companies>
-</lol:movie_catalog>
-
+  <!-- Companies -->
+  <com:companies xmlns:com="http://www.horetskyidubenko.com/catalog">
+    <com:company IdCompany="c1">
+      <com:companyTitle>Castle Rock</com:companyTitle>
+      <com:founded isExactDate="true">1987-06-19</com:founded>
+      <com:president>Martin Shafer</com:president>
+      <com:founders>
+        <com:founder>Martin Shafer</com:founder>
+        <com:founder>Rob Reiner</com:founder>
+        <com:founder>Andrew Scheinman</com:founder>
+        <com:founder>Glenn Padnick</com:founder>
+        <com:founder>Alan Horn</com:founder>
+      </com:founders>
+      <com:headquarter>United States</com:headquarter>
+    </com:company>
+    <com:company IdCompany="c2">
+      <com:companyTitle>Paramount Pictures</com:companyTitle>
+      <com:founded isExactDate="true">1912-05-08</com:founded>
+      <com:chairman>Jim Gianopulos</com:chairman>
+      <com:founders>
+        <com:founder>William Wadsworth Hodkinson</com:founder>
+        <com:founder>Adolph Zukor</com:founder>
+        <com:founder>Jesse Louis Lasky</com:founder>
+      </com:founders>
+      <com:headquarter>United States</com:headquarter>
+    </com:company>
+    <com:company IdCompany="c3">
+      <com:companyTitle>Warner Bros-</com:companyTitle>
+      <com:founded isExactDate="true">1923-04-04</com:founded>
+      <com:chairman>Kevin Tsujihara</com:chairman>
+      <com:founders>
+        <com:founder>Harry Warner</com:founder>
+        <com:founder>Albert Warner</com:founder>
+        <com:founder>Sam Warner</com:founder>
+        <com:founder>Jack L- Warner</com:founder>
+      </com:founders>
+      <com:headquarter>United States</com:headquarter>
+    </com:company>
+    <com:company IdCompany="c4">
+      <com:companyTitle>Legendary</com:companyTitle>
+      <com:founded isExactDate="false">2000-01-13</com:founded>
+      <com:chairman>Thomas Tull</com:chairman>
+      <com:founders>
+        <com:founder>Thomas Tull</com:founder>
+      </com:founders>
+      <com:headquarter>United States</com:headquarter>
+    </com:company>
+    <com:company IdCompany="c5">
+      <com:companyTitle>20th Century Fox</com:companyTitle>
+      <com:founded isExactDate="true">1935-05-31</com:founded>
+      <com:chairman>Stacey Snider</com:chairman>
+      <com:founders>
+        <com:founder>William Fox</com:founder>
+        <com:founder>Joseph M- Schenck</com:founder>
+        <com:founder>Darryl F- Zanuck</com:founder>
+      </com:founders>
+      <com:headquarter>United States</com:headquarter>
+    </com:company>
+    <com:company IdCompany="c6">
+      <com:companyTitle>Universal Pictures</com:companyTitle>
+      <com:founded isExactDate="true">1912-04-30</com:founded>
+      <com:president>Jimmy Horowitz</com:president>
+      <com:founders>
+        <com:founder>Carl Laemmle</com:founder>
+        <com:founder>Pat Powers</com:founder>
+        <com:founder>David Horsley</com:founder>
+        <com:founder>William Swanson</com:founder>
+        <com:founder>Mark Dintenfass</com:founder>
+        <com:founder>Charles Baumann</com:founder>
+        <com:founder>Robert H- Cochrane</com:founder>
+        <com:founder>Adam Kessel</com:founder>
+        <com:founder>Jules Brulatour</com:founder>
+      </com:founders>
+      <com:headquarter>United States</com:headquarter>
+    </com:company>
+    <com:company IdCompany="c7">
+      <com:companyTitle>Lionsgate Films</com:companyTitle>
+      <com:founded isExactDate="true">1912-04-30</com:founded>
+      <com:chairman>Rob Friedman</com:chairman>
+      <com:founders>
+        <com:founder>Carl Laemmle</com:founder>
+        <com:founder>Pat Powers</com:founder>
+        <com:founder>David Horsley</com:founder>
+        <com:founder>William Swanson</com:founder>
+        <com:founder>Mark Dintenfass</com:founder>
+        <com:founder>Charles Baumann</com:founder>
+        <com:founder>Robert H- Cochrane</com:founder>
+        <com:founder>Adam Kessel</com:founder>
+        <com:founder>Jules Brulatour</com:founder>
+      </com:founders>
+      <com:headquarter>United States</com:headquarter>
+    </com:company>
+  </com:companies>
+</catalog:movie_catalog>
