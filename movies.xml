@@ -2,11 +2,11 @@
 <!-- <!DOCTYPE catalog:movie_catalog SYSTEM "movie.dtd"> -->
 <?xml-stylesheet?>
 <catalog:movie_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns:catalog="http://www.horetskyidubenko.com/catalog" 
-xsi:schemaLocation="http://www.horetskyidubenko.com/catalog movie.xsd">
+xmlns:catalog="http://www.dubenko.dev/catalog" 
+xsi:schemaLocation="http://www.dubenko.dev/catalog movie.xsd">
   
   <!-- Metadata -->
-  <autorzy:document_information xmlns:autorzy="http://www.horetskyidubenko.com/catalog">
+  <autorzy:document_information xmlns:autorzy="http://www.dubenko.dev/catalog">
     <autorzy:lab_title>Movie viewer</autorzy:lab_title>
     <autorzy:proj_authors>
       <autorzy:author1>
@@ -24,7 +24,7 @@ xsi:schemaLocation="http://www.horetskyidubenko.com/catalog movie.xsd">
   </autorzy:document_information>
 
   <!-- Movies -->
-  <mov:movies xmlns:mov="http://www.horetskyidubenko.com/catalog">
+  <mov:movies xmlns:mov="http://www.dubenko.dev/catalog">
     <mov:movie IdMovie="m1" IdCompany="c1">
       <mov:title lang="pl">Skazani na Shawshank</mov:title>
       <mov:country>USA</mov:country>
@@ -357,7 +357,7 @@ xsi:schemaLocation="http://www.horetskyidubenko.com/catalog movie.xsd">
   </mov:movies>
 
   <!-- Companies -->
-  <com:companies xmlns:com="http://www.horetskyidubenko.com/catalog">
+  <com:companies xmlns:com="http://www.dubenko.dev/catalog">
     <com:company IdCompany="c1">
       <com:companyTitle>Castle Rock</com:companyTitle>
       <com:founded isExactDate="true">1987-06-19</com:founded>

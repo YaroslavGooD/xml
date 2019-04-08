@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-targetNamespace="http://www.horetskyidubenko.com/catalog" 
-xmlns:catalog="http://www.horetskyidubenko.com/catalog" 
-xmlns:autorzy="http://www.horetskyidubenko.com/catalog" 
-xmlns:mov="http://www.horetskyidubenko.com/catalog" 
-xmlns:com="http://www.horetskyidubenko.com/catalog" 
+targetNamespace="http://www.dubenko.dev/catalog" 
+xmlns:catalog="http://www.dubenko.dev/catalog" 
+xmlns:autorzy="http://www.dubenko.dev/catalog" 
+xmlns:mov="http://www.dubenko.dev/catalog" 
+xmlns:com="http://www.dubenko.dev/catalog" 
 elementFormDefault="qualified">
 
   <!-- SimpleType -->
