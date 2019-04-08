@@ -26,6 +26,7 @@ elementFormDefault="qualified">
     <xs:restriction base="xs:string">
       <xs:enumeration value="usd" />
       <xs:enumeration value="pln" />
+      <xs:enumeration value="eur" />
     </xs:restriction>
   </xs:simpleType>
 
@@ -213,7 +214,7 @@ elementFormDefault="qualified">
   <xs:element name="founders">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="com:founder" maxOccurs="unbounded" />
+        <xs:element ref="com:founder" maxOccurs="unbounded" minOccurs="1" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
