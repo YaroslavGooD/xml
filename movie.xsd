@@ -55,7 +55,7 @@ elementFormDefault="qualified">
   <xs:attributeGroup name="movieAttr">
     <xs:attribute name="IdMovie" use="required">
       <xs:simpleType>
-        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:ID">
           <xs:pattern value="[m]([0-9])*" />
         </xs:restriction>
       </xs:simpleType>
@@ -235,7 +235,7 @@ elementFormDefault="qualified">
       </xs:sequence>
       <xs:attribute name="IdCompany" use="required">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
+          <xs:restriction base="xs:ID">
             <xs:pattern value="[c]([0-9])*" />
           </xs:restriction>
         </xs:simpleType>
