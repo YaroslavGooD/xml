@@ -62,7 +62,7 @@ elementFormDefault="qualified">
     </xs:attribute>
     <xs:attribute name="IdCompany" use="required">
       <xs:simpleType>
-        <xs:restriction base="xs:string">
+        <xs:restriction base="xs:IDREF">
           <xs:pattern value="[c]([0-9])*" />
         </xs:restriction>
       </xs:simpleType>
@@ -188,7 +188,7 @@ elementFormDefault="qualified">
       </xs:sequence>
     </xs:complexType>
     <xs:key name="movieID">
-      <xs:selector xpath="movie" />
+      <xs:selector xpath="mov:movie" />
       <xs:field xpath="@IdMovie" />
     </xs:key>
   </xs:element>
@@ -199,7 +199,7 @@ elementFormDefault="qualified">
     <xs:complexType>
       <xs:simpleContent>
         <xs:extension base="com:typ_date">
-          <xs:attribute name="isExactDate" type="xs:boolean" use="optional" />
+          <xs:attribute name="isExactDate" type="xs:boolean" use="optional"/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
@@ -236,7 +236,7 @@ elementFormDefault="qualified">
       <xs:attribute name="IdCompany" use="required">
         <xs:simpleType>
           <xs:restriction base="xs:ID">
-            <xs:pattern value="[c]([0-9])*" />
+            <xs:pattern value="[c]([0-9])+" />
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
@@ -251,7 +251,7 @@ elementFormDefault="qualified">
     </xs:complexType>
 
     <xs:key name="companyID">
-      <xs:selector xpath="company" />
+      <xs:selector xpath="com:company" />
       <xs:field xpath="@IdCompany" />
     </xs:key>
   </xs:element>
@@ -268,7 +268,7 @@ elementFormDefault="qualified">
 
 <!-- Key ref -->
     <xs:keyref name="refCompany" refer="com:companyID">
-      <xs:selector xpath="movies/movie" />
+      <xs:selector xpath="catalog:movies/movie" />
       <xs:field xpath="@IdCompany" />
     </xs:keyref>
   </xs:element>
