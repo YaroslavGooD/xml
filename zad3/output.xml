@@ -1,0 +1,546 @@
+<movie_catalog>
+  <movies>
+    <Movie Company="Castle Rock">
+      <Title Language="pl">Skazani na Shawshank</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>1994-09-10</Date>
+      <Worldwide_gross currency="usd">58500000</Worldwide_gross>
+      <Budget currency="usd">25000000</Budget>
+      <Total_earning>earning(33500000 usd)</Total_earning>
+      <Runtime timeFormat="min">142</Runtime>
+      <Rate>9,3</Rate>
+      <Categories>
+        <Category>Drama</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Paramount Pictures">
+      <Title Language="pl">Ojciec chrzestny</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>1972-03-14</Date>
+      <Worldwide_gross currency="usd">245066411</Worldwide_gross>
+      <Budget currency="usd">6000000</Budget>
+      <Total_earning>earning(239066411 usd)</Total_earning>
+      <Runtime timeFormat="min">175</Runtime>
+      <Rate>9,3</Rate>
+      <Categories>
+        <Category>Crime</Category>
+        <Category>Drama</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Legendary">
+      <Title Language="pl">Watchmen. Strażnicy</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>1994-09-10</Date>
+      <Worldwide_gross currency="usd">58500000</Worldwide_gross>
+      <Budget currency="usd">25000000</Budget>
+      <Total_earning>earning(33500000 usd)</Total_earning>
+      <Runtime timeFormat="min">142</Runtime>
+      <Rate>9,3</Rate>
+      <Categories>
+        <Category>Drama</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Legendary">
+      <Title Language="pl">Incepcja</Title>
+      <Countries>
+        <Country>UK</Country>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2010-07-08</Date>
+      <Worldwide_gross currency="usd">825532764</Worldwide_gross>
+      <Budget currency="usd">160000000</Budget>
+      <Total_earning>earning(665532764 usd)</Total_earning>
+      <Runtime timeFormat="min">148</Runtime>
+      <Rate>8,8</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Sci-Fi</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Paramount Pictures">
+      <Title Language="pl">Interstellar</Title>
+      <Countries>
+        <Country>UK</Country>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2014-10-26</Date>
+      <Worldwide_gross currency="usd">675020017</Worldwide_gross>
+      <Budget currency="usd">165000000</Budget>
+      <Total_earning>earning(510020017 usd)</Total_earning>
+      <Runtime timeFormat="min">169</Runtime>
+      <Rate>8,6</Rate>
+      <Categories>
+        <Category>Drama</Category>
+        <Category>Adventure</Category>
+        <Category>Sci-Fi</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Lionsgate Films">
+      <Title Language="pl">Terminator 2: Dzien sadu</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>1991-07-18</Date>
+      <Worldwide_gross currency="usd">315000000</Worldwide_gross>
+      <Budget currency="usd">102000000</Budget>
+      <Total_earning>earning(213000000 usd)</Total_earning>
+      <Runtime timeFormat="min">156</Runtime>
+      <Rate>8,5</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Sci-Fi</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="20th Century Fox">
+      <Title Language="pl">Free Solo: ekstremalna wspinaczka</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-08-31</Date>
+      <Worldwide_gross currency="usd">17235945</Worldwide_gross>
+      <Budget currency="usd">5000000</Budget>
+      <Total_earning>earning(12235945 usd)</Total_earning>
+      <Runtime timeFormat="min">100</Runtime>
+      <Rate>8,3</Rate>
+      <Categories>
+        <Category>Documentary</Category>
+        <Category>Sport</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Universal Pictures">
+      <Title Language="pl">Green Book</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-09-11</Date>
+      <Worldwide_gross currency="usd">42526091</Worldwide_gross>
+      <Budget currency="usd">23000000</Budget>
+      <Total_earning>earning(19526091 usd)</Total_earning>
+      <Runtime timeFormat="min">130</Runtime>
+      <Rate>8,3</Rate>
+      <Categories>
+        <Category>Biography</Category>
+        <Category>Comedy</Category>
+        <Category>Drama</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="20th Century Fox">
+      <Title Language="pl">Bohemian Rhapsody</Title>
+      <Countries>
+        <Country>UK</Country>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-10-23</Date>
+      <Worldwide_gross currency="usd">433000000</Worldwide_gross>
+      <Budget currency="usd">52000000</Budget>
+      <Total_earning>earning(381000000 usd)</Total_earning>
+      <Runtime timeFormat="min">134</Runtime>
+      <Rate>8,1</Rate>
+      <Categories>
+        <Category>Biography</Category>
+        <Category>Drama</Category>
+        <Category>Music</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Universal Pictures">
+      <Title Language="pl">Jak wytresowac smoka 3</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2019-01-03</Date>
+      <Worldwide_gross currency="usd">123301420</Worldwide_gross>
+      <Budget currency="usd">129000000</Budget>
+      <Total_earning>losing(5698580 usd)</Total_earning>
+      <Runtime timeFormat="min">104</Runtime>
+      <Rate>7,9</Rate>
+      <Categories>
+        <Category>Animation</Category>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Warner Bros.">
+      <Title Language="pl">Narodziny gwiazdy</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-08-31</Date>
+      <Worldwide_gross currency="usd">214601602</Worldwide_gross>
+      <Budget currency="usd">36000000</Budget>
+      <Total_earning>earning(178601602 usd)</Total_earning>
+      <Runtime timeFormat="min">148</Runtime>
+      <Rate>7,8</Rate>
+      <Categories>
+        <Category>Drama</Category>
+        <Category>Music</Category>
+        <Category>Romance</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="20th Century Fox">
+      <Title Language="pl">Faworyta</Title>
+      <Countries>
+        <Country>UK</Country>
+        <Country>USA</Country>
+        <Country>Ireland</Country>
+      </Countries>
+      <Date>2018-08-30</Date>
+      <Worldwide_gross currency="usd">42544448</Worldwide_gross>
+      <Budget currency="usd">15000000</Budget>
+      <Total_earning>earning(27544448 usd)</Total_earning>
+      <Runtime timeFormat="min">119</Runtime>
+      <Rate>7,7</Rate>
+      <Categories>
+        <Category>Biography</Category>
+        <Category>Drama</Category>
+        <Category>Comedy</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Legendary">
+      <Title Language="pl">Skazani na Shawshank</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2009-02-23</Date>
+      <Worldwide_gross currency="usd">185258983</Worldwide_gross>
+      <Budget currency="usd">130000000</Budget>
+      <Total_earning>earning(55258983 usd)</Total_earning>
+      <Runtime timeFormat="min">215</Runtime>
+      <Rate>7,6</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Drama</Category>
+        <Category>Mystery</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Lionsgate Films">
+      <Title Language="pl">American Psycho</Title>
+      <Countries>
+        <Country>USA</Country>
+        <Country>Canada</Country>
+      </Countries>
+      <Date>2000-01-21</Date>
+      <Worldwide_gross currency="usd">34266564</Worldwide_gross>
+      <Budget currency="usd">7000000</Budget>
+      <Total_earning>earning(27266564 usd)</Total_earning>
+      <Runtime timeFormat="min">101</Runtime>
+      <Rate>7,6</Rate>
+      <Categories>
+        <Category>Crime</Category>
+        <Category>Drama</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Warner Bros.">
+      <Title Language="pl">Wonder Woman</Title>
+      <Countries>
+        <Country>China</Country>
+        <Country>USA</Country>
+        <Country>Hong Kong</Country>
+      </Countries>
+      <Date>2017-05-15</Date>
+      <Worldwide_gross currency="usd">821763408</Worldwide_gross>
+      <Budget currency="usd">149000000</Budget>
+      <Total_earning>earning(672763408 usd)</Total_earning>
+      <Runtime timeFormat="min">141</Runtime>
+      <Rate>7,5</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Fantasy</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Paramount Pictures">
+      <Title Language="pl">Rodzina od zaraz</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-11-16</Date>
+      <Worldwide_gross currency="usd">81025217</Worldwide_gross>
+      <Budget currency="usd">48000000</Budget>
+      <Total_earning>earning(33025217 usd)</Total_earning>
+      <Runtime timeFormat="min">118</Runtime>
+      <Rate>7,4</Rate>
+      <Categories>
+        <Category>Comedy</Category>
+        <Category>Drama</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Universal Pictures">
+      <Title Language="pl">Pierwszy czlowiek</Title>
+      <Countries>
+        <Country>UK</Country>
+        <Country>Japan</Country>
+      </Countries>
+      <Date>2018-08-29</Date>
+      <Worldwide_gross currency="usd">100546153</Worldwide_gross>
+      <Budget currency="usd">60000000</Budget>
+      <Total_earning>earning(40546153 usd)</Total_earning>
+      <Runtime timeFormat="min">141</Runtime>
+      <Rate>7,4</Rate>
+      <Categories>
+        <Category>Biography</Category>
+        <Category>Drama</Category>
+        <Category>History</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Lionsgate Films">
+      <Title Language="pl">Nieodwracalne</Title>
+      <Countries>
+        <Country>France</Country>
+      </Countries>
+      <Date>2002-05-22</Date>
+      <Worldwide_gross currency="usd">753501</Worldwide_gross>
+      <Budget currency="usd">635610</Budget>
+      <Total_earning>earning(117891 usd)</Total_earning>
+      <Runtime timeFormat="min">99</Runtime>
+      <Rate>7,4</Rate>
+      <Categories>
+        <Category>Crime</Category>
+        <Category>Drama</Category>
+        <Category>Mystery</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Warner Bros.">
+      <Title Language="pl">Aquaman</Title>
+      <Countries>
+        <Country>Australia</Country>
+        <Country>USA</Country>
+      </Countries>
+      <Date>1994-09-10</Date>
+      <Worldwide_gross currency="usd">58500000</Worldwide_gross>
+      <Budget currency="usd">25000000</Budget>
+      <Total_earning>earning(33500000 usd)</Total_earning>
+      <Runtime timeFormat="min">142</Runtime>
+      <Rate>7,3</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Fantasy</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Warner Bros.">
+      <Title Language="pl">Creed II</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-11-14</Date>
+      <Worldwide_gross currency="usd">175431419</Worldwide_gross>
+      <Budget currency="usd">50000000</Budget>
+      <Total_earning>earning(125431419 usd)</Total_earning>
+      <Runtime timeFormat="min">130</Runtime>
+      <Rate>7,3</Rate>
+      <Categories>
+        <Category>Drama</Category>
+        <Category>Sport</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Lionsgate Films">
+      <Title Language="pl">Gwiezdne wrota</Title>
+      <Countries>
+        <Country>France</Country>
+        <Country>USA</Country>
+      </Countries>
+      <Date>1994-10-28</Date>
+      <Worldwide_gross currency="usd">196600000</Worldwide_gross>
+      <Budget currency="usd">55000000</Budget>
+      <Total_earning>earning(141600000 usd)</Total_earning>
+      <Runtime timeFormat="min">130</Runtime>
+      <Rate>7,1</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Sci-Fi</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Paramount Pictures">
+      <Title Language="pl">Operacja Overlord</Title>
+      <Countries>
+        <Country>USA</Country>
+        <Country>Canada</Country>
+      </Countries>
+      <Date>2018-09-22</Date>
+      <Worldwide_gross currency="usd">21704844</Worldwide_gross>
+      <Budget currency="usd">38000000</Budget>
+      <Total_earning>losing(16295156 usd)</Total_earning>
+      <Runtime timeFormat="min">110</Runtime>
+      <Rate>6,8</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Horror</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Legendary">
+      <Title Language="pl">Kong: Wyspa Czaszki</Title>
+      <Countries>
+        <Country>China</Country>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2017-02-28</Date>
+      <Worldwide_gross currency="usd">566652812</Worldwide_gross>
+      <Budget currency="usd">185000000</Budget>
+      <Total_earning>earning(381652812 usd)</Total_earning>
+      <Runtime timeFormat="min">118</Runtime>
+      <Rate>6,6</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Fantasy</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Warner Bros.">
+      <Title Language="eng">Ocean's 8</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-06-05</Date>
+      <Worldwide_gross currency="usd">283980167</Worldwide_gross>
+      <Budget currency="usd">70000000</Budget>
+      <Total_earning>earning(213980167 usd)</Total_earning>
+      <Runtime timeFormat="min">110</Runtime>
+      <Rate>6,2</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Comedy</Category>
+        <Category>Crime</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Legendary">
+      <Title Language="pl">Jurassic World: Upadłe królestwo </Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-05-21</Date>
+      <Worldwide_gross currency="usd">1309484461</Worldwide_gross>
+      <Budget currency="usd">170000000</Budget>
+      <Total_earning>earning(1139484461 usd)</Total_earning>
+      <Runtime timeFormat="min">128</Runtime>
+      <Rate>6,2</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Sci-Fi</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Universal Pictures">
+      <Title Language="pl">Zabójcze maszyny</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-12-05</Date>
+      <Worldwide_gross currency="usd">82865379</Worldwide_gross>
+      <Budget currency="usd">100000000</Budget>
+      <Total_earning>losing(17134621 usd)</Total_earning>
+      <Runtime timeFormat="min">128</Runtime>
+      <Rate>6,2</Rate>
+      <Categories>
+        <Category>Animation</Category>
+        <Category>Action</Category>
+        <Category>Fantasy</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Warner Bros.">
+      <Title Language="pl">Legion samobójców</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2016-08-01</Date>
+      <Worldwide_gross currency="usd">746846894</Worldwide_gross>
+      <Budget currency="usd">175000000</Budget>
+      <Total_earning>earning(571846894 usd)</Total_earning>
+      <Runtime timeFormat="min">134</Runtime>
+      <Rate>6,1</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Fantasy</Category>
+      </Categories>
+    </Movie>
+    <Movie Company="Legendary">
+      <Title Language="pl">Drapacz chmur</Title>
+      <Countries>
+        <Country>USA</Country>
+      </Countries>
+      <Date>2018-07-11</Date>
+      <Worldwide_gross currency="usd">292351275</Worldwide_gross>
+      <Budget currency="usd">125000000</Budget>
+      <Total_earning>earning(167351275 usd)</Total_earning>
+      <Runtime timeFormat="min">102</Runtime>
+      <Rate>5,8</Rate>
+      <Categories>
+        <Category>Action</Category>
+        <Category>Adventure</Category>
+        <Category>Thriller</Category>
+      </Categories>
+    </Movie>
+  </movies>
+  <report>
+    <movies_>
+      <countOfMovies>28</countOfMovies>
+      <categories>
+        <countOfCategories>16</countOfCategories>
+        <drama>14</drama>
+        <comedy>4</comedy>
+        <action>14</action>
+        <adventure>11</adventure>
+        <horror>1</horror>
+        <crime>4</crime>
+        <scifi>5</scifi>
+        <romance>1</romance>
+        <thriller>1</thriller>
+        <fantasy>5</fantasy>
+        <mystery>2</mystery>
+        <history>1</history>
+        <biography>4</biography>
+        <sport>2</sport>
+        <documentary>1</documentary>
+        <animation>2</animation>
+        <music>2</music>
+      </categories>
+      <companies>
+        <Castle_Rock>1</Castle_Rock>
+        <Paramount_Pictures>4</Paramount_Pictures>
+        <Warner_Bros>6</Warner_Bros>
+        <Legendary>6</Legendary>
+        <Century_Fox_20th>3</Century_Fox_20th>
+        <Universal_Pictures>4</Universal_Pictures>
+        <Lionsgate_Films>4</Lionsgate_Films>
+      </companies>
+      <countries>
+        <USA>26</USA>
+        <Canada>2</Canada>
+        <UK>5</UK>
+        <Australia>1</Australia>
+        <China>2</China>
+        <HongKong>1</HongKong>
+        <Ireland>1</Ireland>
+        <Japan>1</Japan>
+        <France>2</France>
+      </countries>
+      <money>
+        <average_budget>76094129</average_budget>
+        <average_worldwide_gross>286030706</average_worldwide_gross>
+        <max_budget>Kong: Wyspa Czaszki (Budget: 185000000 usd)</max_budget>
+        <min_budget>Nieodwracalne (Budget: 635610 usd)</min_budget>
+        <max_worldwide_gross>Jurassic World: Upadłe królestwo  (Worldwide gross: 1309484461 usd)</max_worldwide_gross>
+        <min_worldwide_gross>Nieodwracalne (Worldwide gross: 753501 usd)</min_worldwide_gross>
+      </money>
+      <time>
+        <average_movies_time>133</average_movies_time>
+        <max_runtime>Skazani na Shawshank (Run time: 215 min)</max_runtime>
+        <min_runtime>Nieodwracalne (Run time: 99 min)</min_runtime>
+      </time>
+      <ReportDate>05/03/2019 19:40:19</ReportDate>
+    </movies_>
+  </report>
+  <authors>
+    <first>Yaroslav Horetskyi 211714</first>
+    <second>Oleksandr Dubenko 211651</second>
+  </authors>
+</movie_catalog>

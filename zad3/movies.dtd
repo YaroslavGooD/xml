@@ -1,0 +1,39 @@
+<!ELEMENT movie_catalog (document_information, movies, companies)>
+    <!ELEMENT document_information (lab_title, proj_authors,entire)>
+    	<!ELEMENT lab_title (#PCDATA)>
+		<!ELEMENT proj_authors (author1,author2)>
+			<!ELEMENT author1 (name,surname,index_id)>
+			<!ELEMENT author2 (name,surname,index_id)>
+				<!ELEMENT name (#PCDATA)>
+				<!ELEMENT surname (#PCDATA)>
+				<!ELEMENT index_id (#PCDATA)>
+            <!ELEMENT entire (#PCDATA)>
+        <!ELEMENT movies (movie+)>
+            <!ELEMENT movie (title,(countries | country),date,budget,worldwide_gross,runtime,rate,category)>
+            <!ELEMENT title (#PCDATA)>
+            <!ELEMENT countries (country+)>
+                <!ELEMENT country (#PCDATA)>
+            <!ELEMENT date (#PCDATA)>
+            <!ELEMENT budget (#PCDATA)>
+            <!ELEMENT worldwide_gross (#PCDATA)>
+            <!ELEMENT runtime (#PCDATA)>
+            <!ELEMENT rate (#PCDATA)>
+            <!ELEMENT category (#PCDATA)>
+            <!ATTLIST movie IdMovie ID #REQUIRED IdCompany IDREF #IMPLIED>
+            <!ATTLIST title lang (pl | en) #REQUIRED>
+        <!ELEMENT companies (company+)>
+            <!ELEMENT company (companyTitle,founded,(president | chairman),founders,headquarter)>
+                <!ELEMENT companyTitle (#PCDATA)>
+                <!ELEMENT founded (#PCDATA)>
+                <!ELEMENT president (#PCDATA)>
+                <!ELEMENT chairman (#PCDATA)>
+                <!ELEMENT founders (founder+)>
+                    <!ELEMENT founder (#PCDATA)>
+                <!ELEMENT headquarter (#PCDATA)>
+                <!ATTLIST company IdCompany ID #REQUIRED>
+
+
+            
+
+            
+
