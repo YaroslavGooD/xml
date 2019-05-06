@@ -139,6 +139,15 @@
             <min_worldwide_gross>
               <xsl:apply-templates select="//movie/worldwide_gross[text()=$minW]"/>
             </min_worldwide_gross>
+            <max_earning>
+              <xsl:apply-templates select="//movie/title[text()=$maxEarning]"/>
+            </max_earning>
+            <min_earning>
+              <xsl:apply-templates select="//movie/title[text()=$minEarning]"/>
+            </min_earning>
+            <max_losing>
+              <xsl:apply-templates select="//movie/title[text()=$maxLosing]"/>
+            </max_losing>
           </money>
           <time>
             <average_movies_time>
@@ -168,6 +177,52 @@
       </xsl:element>
 
     </xsl:element>
+  </xsl:template>
+
+
+  <xsl:variable name="maxLosing">
+    <xsl:for-each select="/movie_catalog/movies/movie">
+      <xsl:sort select="number(worldwide_gross) - number(budget)" data-type="number" order="ascending"/>
+      <xsl:if test="position() = 1">
+        <xsl:value-of select="title"/>
+      </xsl:if>
+    </xsl:for-each>
+  </xsl:variable>
+  <xsl:template match="//movie/title[text()=$maxLosing]">
+    <xsl:value-of select="." />
+    <xsl:text> (Losing: </xsl:text>
+    <xsl:value-of select="concat(format-number(number(../worldwide_gross) - number(../budget),'#'),' ', ../buget/@currency)" />
+    <xsl:text>)</xsl:text>
+  </xsl:template>
+
+  <xsl:variable name="minEarning">
+    <xsl:for-each select="/movie_catalog/movies/movie">
+      <xsl:sort select="(number(worldwide_gross) - number(budget) > 0)" data-type="number" order="ascending"/>
+      <xsl:if test="position() = 1">
+        <xsl:value-of select="title"/>
+      </xsl:if>
+    </xsl:for-each>
+  </xsl:variable>
+  <xsl:template match="//movie/title[text()=$minEarning]">
+    <xsl:value-of select="." />
+    <xsl:text> (Earning: </xsl:text>
+    <xsl:value-of select="concat(format-number(number(../worldwide_gross) - number(../budget),'#'),' ', ../buget/@currency)" />
+    <xsl:text>)</xsl:text>
+  </xsl:template>
+
+  <xsl:variable name="maxEarning">
+    <xsl:for-each select="/movie_catalog/movies/movie">
+      <xsl:sort select="number(worldwide_gross) - number(budget)" data-type="number" order="descending"/>
+      <xsl:if test="position() = 1">
+        <xsl:value-of select="title"/>
+      </xsl:if>
+    </xsl:for-each>
+  </xsl:variable>
+  <xsl:template match="//movie/title[text()=$maxEarning]">
+    <xsl:value-of select="." />
+    <xsl:text> (Earning: </xsl:text>
+    <xsl:value-of select="concat(format-number(number(../worldwide_gross) - number(../budget),'#'),' ', ../buget/@currency)" />
+    <xsl:text>)</xsl:text>
   </xsl:template>
 
   <xsl:variable name="maxBudget" select="max(/movie_catalog/movies/movie/budget)"/>

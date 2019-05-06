@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <!DOCTYPE catalog:movie_catalog SYSTEM "movie.dtd"> -->
-<?xml-stylesheet?>
 <catalog:movie_catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns:catalog="http://www.dubenko.dev/catalog" 
-xsi:schemaLocation="http://www.dubenko.dev/catalog movie.xsd">
-  
+  xmlns:catalog="http://www.dubenko.dev/catalog" xsi:schemaLocation="http://www.dubenko.dev/catalog movie.xsd">
+
   <!-- Metadata -->
   <autorzy:document_information xmlns:autorzy="http://www.dubenko.dev/catalog">
     <autorzy:lab_title>Movie viewer</autorzy:lab_title>

@@ -8,15 +8,15 @@
       <head>
         <link rel="stylesheet" href="xhtmlStyle.css"/>
         <title>Movie Catalog</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      </head>
+      <body>
+        <h1>Movie Catalog</h1>
         <p>
           <a id="reportRef" href="#ref" title="To report">
             <b>to report</b>
           </a>
         </p>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      </head>
-      <body>
-        <h1>Movie Catalog</h1>
         <div class="movies">
           <xsl:for-each select="/movie_catalog/movies/Movie">
             <div class="movie">
@@ -68,6 +68,7 @@
             </div>
           </xsl:for-each>
         </div>
+        <hr/>
         <div class="report">
           <h2>Report</h2>
           <div class="movies_">
@@ -75,7 +76,7 @@
               <b>Count of movies: </b>
               <xsl:value-of select="/movie_catalog/report/movies_/countOfMovies"/>
             </p>
-            <div class="result">
+            <div class="result categories">
               <h3>Categories</h3>
               <p>
                 <b>Drama: </b>
@@ -248,6 +249,18 @@
                 <b>Min worldwide gross: </b>
                 <xsl:value-of select="/movie_catalog/report/movies_/money/min_worldwide_gross"/>
               </p>
+              <p>
+                <b>Max earning: </b>
+                <xsl:value-of select="/movie_catalog/report/movies_/money/max_earning"/>
+              </p>
+              <p>
+                <b>Min earning: </b>
+                <xsl:value-of select="/movie_catalog/report/movies_/money/min_earning"/>
+              </p>
+              <p>
+                <b>Max losing: </b>
+                <xsl:value-of select="/movie_catalog/report/movies_/money/max_losing"/>
+              </p>
             </div>
             <div class="result">
               <h3>Time</h3>
@@ -273,6 +286,7 @@
             </div>
           </div>
         </div>
+        <hr />
         <div class="authors">
           <h3>Athors</h3>
           <p>

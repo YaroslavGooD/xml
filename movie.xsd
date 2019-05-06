@@ -45,7 +45,7 @@ elementFormDefault="qualified">
   </xs:simpleType>
 
   <!-- Group -->
-  <xs:group name="Persone">
+  <xs:group name="Person">
     <xs:sequence>
       <xs:element name="name" type="autorzy:ShortString" />
       <xs:element name="surname" type="autorzy:ShortString" />
@@ -72,7 +72,7 @@ elementFormDefault="qualified">
   <!-- ComplexType -->
   <xs:complexType name="author">
     <xs:sequence>
-      <xs:group ref="autorzy:Persone" />
+      <xs:group ref="autorzy:Person" />
       <xs:element ref="autorzy:index_id" />
     </xs:sequence>
   </xs:complexType>

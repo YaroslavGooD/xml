@@ -202,23 +202,6 @@
         <Category>Comedy</Category>
       </Categories>
     </Movie>
-    <Movie Company="Legendary">
-      <Title Language="pl">Skazani na Shawshank</Title>
-      <Countries>
-        <Country>USA</Country>
-      </Countries>
-      <Date>2009-02-23</Date>
-      <Worldwide_gross currency="usd">185258983</Worldwide_gross>
-      <Budget currency="usd">130000000</Budget>
-      <Total_earning>earning(55258983 usd)</Total_earning>
-      <Runtime timeFormat="min">215</Runtime>
-      <Rate>7,6</Rate>
-      <Categories>
-        <Category>Action</Category>
-        <Category>Drama</Category>
-        <Category>Mystery</Category>
-      </Categories>
-    </Movie>
     <Movie Company="Lionsgate Films">
       <Title Language="pl">American Psycho</Title>
       <Countries>
@@ -482,12 +465,12 @@
   </movies>
   <report>
     <movies_>
-      <countOfMovies>28</countOfMovies>
+      <countOfMovies>27</countOfMovies>
       <categories>
         <countOfCategories>16</countOfCategories>
-        <drama>14</drama>
+        <drama>13</drama>
         <comedy>4</comedy>
-        <action>14</action>
+        <action>13</action>
         <adventure>11</adventure>
         <horror>1</horror>
         <crime>4</crime>
@@ -495,7 +478,7 @@
         <romance>1</romance>
         <thriller>1</thriller>
         <fantasy>5</fantasy>
-        <mystery>2</mystery>
+        <mystery>1</mystery>
         <history>1</history>
         <biography>4</biography>
         <sport>2</sport>
@@ -507,13 +490,13 @@
         <Castle_Rock>1</Castle_Rock>
         <Paramount_Pictures>4</Paramount_Pictures>
         <Warner_Bros>6</Warner_Bros>
-        <Legendary>6</Legendary>
+        <Legendary>5</Legendary>
         <Century_Fox_20th>3</Century_Fox_20th>
         <Universal_Pictures>4</Universal_Pictures>
         <Lionsgate_Films>4</Lionsgate_Films>
       </companies>
       <countries>
-        <USA>26</USA>
+        <USA>25</USA>
         <Canada>2</Canada>
         <UK>5</UK>
         <Australia>1</Australia>
@@ -524,19 +507,22 @@
         <France>2</France>
       </countries>
       <money>
-        <average_budget>76094129</average_budget>
-        <average_worldwide_gross>286030706</average_worldwide_gross>
+        <average_budget>74097615</average_budget>
+        <average_worldwide_gross>289762992</average_worldwide_gross>
         <max_budget>Kong: Wyspa Czaszki (Budget: 185000000 usd)</max_budget>
         <min_budget>Nieodwracalne (Budget: 635610 usd)</min_budget>
         <max_worldwide_gross>Jurassic World: Upadłe królestwo  (Worldwide gross: 1309484461 usd)</max_worldwide_gross>
         <min_worldwide_gross>Nieodwracalne (Worldwide gross: 753501 usd)</min_worldwide_gross>
+        <max_earning>Jurassic World: Upadłe królestwo  (Earning: 1139484461 )</max_earning>
+        <min_earning>Skazani na Shawshank (Earning: 33500000 )</min_earning>
+        <max_losing>Zabójcze maszyny (Losing: -17134621 )</max_losing>
       </money>
       <time>
-        <average_movies_time>133</average_movies_time>
-        <max_runtime>Skazani na Shawshank (Run time: 215 min)</max_runtime>
+        <average_movies_time>130</average_movies_time>
+        <max_runtime>Ojciec chrzestny (Run time: 175 min)</max_runtime>
         <min_runtime>Nieodwracalne (Run time: 99 min)</min_runtime>
       </time>
-      <ReportDate>05/03/2019 19:40:19</ReportDate>
+      <ReportDate>05/06/2019 17:57:46</ReportDate>
     </movies_>
   </report>
   <authors>
